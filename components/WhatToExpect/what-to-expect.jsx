@@ -92,7 +92,7 @@ export function WhatToExpect() {
                     <p className="mt-2 text-base text-gray-500">
                         Indulge your palate with delicious delights prepared
                         fresh in our in-house kitchen. From hearty breakfasts to
-                        savory snacks, we've got you covered.
+                        savory snacks, we&apos;ve got you covered.
                     </p>
                 </div>
                 <div>
@@ -154,9 +154,9 @@ export function WhatToExpect() {
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
                         Stay connected with complimentary Wi-Fi access available
-                        throughout our properties. Whether you're catching up on
-                        work or sharing your travel adventures, we've got you
-                        covered.
+                        throughout our properties. Whether you&apos;re catching
+                        up on work or sharing your travel adventures, we&apos;ve
+                        got you covered.
                     </p>
                 </div>
                 <div>
@@ -194,7 +194,7 @@ export function WhatToExpect() {
                         width="320"
                     />
                     <h3 className="mt-4 text-lg font-medium text-gray-900">
-                        Nature's Tranquility
+                        Nature&apos;s Tranquility
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
                         Immerse yourself in the soothing sounds of nature as you
