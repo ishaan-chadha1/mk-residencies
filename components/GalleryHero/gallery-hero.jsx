@@ -9,7 +9,7 @@ export function GalleryHero() {
                         alt="Tea Pavillion"
                         className="w-full h-auto  transform transition-transform hover:scale-105"
                         height="400"
-                        src="/tp building exterior .webp"
+                        src="/ts terrace.jpg"
                         style={{
                             aspectRatio: "400/400",
                             objectFit: "cover"
@@ -22,7 +22,7 @@ export function GalleryHero() {
                         alt="Tea Harbour"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="400"
-                        src="/DSC09493-HDR.jpg"
+                        src="/ts corporate room.jpg"
                         style={{
                             aspectRatio: "400/400",
                             objectFit: "cover"
@@ -35,7 +35,7 @@ export function GalleryHero() {
                         alt="Tea square"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="400"
-                        src="/ts reception.jpg"
+                        src="/ts terrace.jpg"
                         style={{
                             aspectRatio: "400/400",
                             objectFit: "cover"
