@@ -25,22 +25,14 @@ import { FeaturedCollection } from "@components/FeaturedCollection/featured-coll
 import { WhatToExpect } from "@components/WhatToExpect/what-to-expect";
 const propertyData = [
     {
-        images: [
-            "/property1-img1.jpg",
-            "/property1-img2.jpg",
-            "/property1-img3.jpg"
-        ],
+        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
         title: "Tea County, Assam",
         description:
             "Nestled amidst lush greenery, the Tranquil Gardens offers a peaceful retreat for the weary soul.",
         location: "Convoy Rd, Chowkidingee, Dibrugarh, Assam 786001"
     },
     {
-        images: [
-            "/property2-img1.jpg",
-            "/property2-img2.jpg",
-            "/property2-img3.jpg"
-        ],
+        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
         title: "Tea Harbour Corporate Hotel",
         description:
             "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
@@ -48,11 +40,7 @@ const propertyData = [
             "29-30, AET CIRCLE, Doddakannelli, Bengaluru, Karnataka 560035"
     },
     {
-        images: [
-            "/property2-img1.jpg",
-            "/property2-img2.jpg",
-            "/property2-img3.jpg"
-        ],
+        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
         title: "Tea Square",
         description:
             "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
@@ -60,11 +48,7 @@ const propertyData = [
             "46, Compact Tea Square, near SOBHA MARVELLA APARTMENT, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103"
     },
     {
-        images: [
-            "/property2-img1.jpg",
-            "/property2-img2.jpg",
-            "/property2-img3.jpg"
-        ],
+        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
         title: "Tea Pavillion",
         description:
             "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
