@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function PropCarousel({ property }) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,12 +16,14 @@ export function PropCarousel({ property }) {
     }, [property.images.length]);
 
     return (
-        <div className="max-w-full bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="max-w-full bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
             <div className="relative">
                 {/* Carousel Image Container */}
                 {property.images.map((src, index) => (
-                    <img
+                    <Image
                         key={src}
+                        width={400}
+                        height={400}
                         src={src}
                         alt={`Slide ${index + 1}`}
                         className={`object-cover w-full aspect-square transition-opacity duration-500 ease-in-out ${

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function FeaturedCollection() {
     return (
         <div className="bg-white p-6 shadow-lg rounded-lg">
@@ -6,7 +8,7 @@ export function FeaturedCollection() {
             </h2>
             <div className="grid grid-cols-3 gap-4">
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Strategic Location"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
@@ -22,7 +24,7 @@ export function FeaturedCollection() {
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Strategic Location"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
@@ -38,7 +40,7 @@ export function FeaturedCollection() {
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Strategic Location"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
@@ -54,7 +56,7 @@ export function FeaturedCollection() {
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Strategic Location"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
@@ -70,7 +72,7 @@ export function FeaturedCollection() {
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Proximity to Business Districts"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
@@ -86,7 +88,7 @@ export function FeaturedCollection() {
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
-                    <img
+                    <Image
                         alt="Modern Tea-Infused Coworking Spaces"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
