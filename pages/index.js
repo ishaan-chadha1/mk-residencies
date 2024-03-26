@@ -23,6 +23,7 @@ import {
 import { GalleryHero } from "@components/GalleryHero/gallery-hero";
 import { FeaturedCollection } from "@components/FeaturedCollection/featured-collection";
 import { WhatToExpect } from "@components/WhatToExpect/what-to-expect";
+import { AdithTemp } from "@components/components/component/adith-temp";
 const propertyData = [
     {
         images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
@@ -139,6 +140,7 @@ export default function Home() {
                     <WhatToExpect />
                     <AmenitiesHero />
                     <FeaturedCollection />
+                    <AdithTemp />
                     <GalleryHero />
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}

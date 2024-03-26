@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 export function PropCarousel({ property }) {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -16,7 +16,13 @@ export function PropCarousel({ property }) {
     }, [property.images.length]);
 
     return (
-        <div className="max-w-full bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+        <div
+            className={`max-w-full bg-white rounded-lg shadow-lg overflow-hidden transition-transform ${
+                isHovered ? "scale-105" : ""
+            }`}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
             <div className="relative">
                 {/* Carousel Image Container */}
                 {property.images.map((src, index) => (
@@ -26,7 +32,7 @@ export function PropCarousel({ property }) {
                         height={400}
                         src={src}
                         alt={`Slide ${index + 1}`}
-                        className={`object-cover w-full aspect-square transition-opacity duration-500 ease-in-out ${
+                        className={`object-cover w-full h-64 transition-opacity duration-500 ease-in-out ${
                             index === currentSlide ? "opacity-100" : "opacity-0"
                         }`}
                         style={{
@@ -41,9 +47,26 @@ export function PropCarousel({ property }) {
                     {property.title}
                 </h3>
                 <p className="text-sm text-gray-500">{property.location}</p>
-                <p className="mt-2 text-gray-600 text-sm">
-                    {property.description}
-                </p>
+                {/* More information is displayed when hovered */}
+                <div
+                    className={`transition-opacity duration-300 ${
+                        isHovered ? "opacity-100" : "opacity-0"
+                    }`}
+                >
+                    <p className="mt-2 text-gray-600 text-sm">
+                        {property.description}
+                    </p>
+                    {/* Include more property details here */}
+                    <p className="text-sm text-gray-600">
+                        Bedrooms: {property.bedrooms}
+                    </p>
+                    <p className="text-sm text-gray-600">
+                        Bathrooms: {property.bathrooms}
+                    </p>
+                    <p className="text-sm text-gray-600">
+                        Price: {property.price}
+                    </p>
+                </div>
             </div>
         </div>
     );

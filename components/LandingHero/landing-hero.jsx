@@ -9,7 +9,7 @@ export function LandingHero() {
                     <h1 className="text-5xl font-bold mb-4">
                         Welcome to TeaCorp
                     </h1>
-                    <p className="mb-6 max-w-xl">Your Home Away From Home</p>
+                    <p className="mb-6 max-w-xl">Home Away From Home</p>
                     <div className="relative w-full">
                         <input
                             className="w-full px-4 py-2 pl-10 bg-white/70 text-gray-900 rounded-md"
