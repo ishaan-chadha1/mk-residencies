@@ -13,15 +13,11 @@ export const HomeBanner = () => {
             <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
                 {/* Appear First */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
-                    <BadgeGroup alignment="center">
-                        <BadgeMessage>Discover Tea House!</BadgeMessage>
-                        <BadgeIcon icon="game-icons:meal" />
-                    </BadgeGroup>
                 </MotionBTTContainer>
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        Welcome To Tea Corp
+                        Welcome To TeaCorp Hotels
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}
@@ -37,7 +33,7 @@ export const HomeBanner = () => {
                     </Content>
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
-                            <Button href="#features">Amenities</Button>
+                            <Button href="#amenities">Amenities</Button>
                             <a
                                 role="button"
                                 href="https://github.com/ishaan-chadha1"

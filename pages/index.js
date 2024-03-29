@@ -69,40 +69,31 @@ export default function Home() {
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}
                 <LandingHero></LandingHero>
-                <HomeBanner />
+
+                <div id="aboutus" className="pt-10">
+                    <HomeBanner />
+                </div>
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
                     {/* Features */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer id="features" className="features">
-                            <BadgeGroup alignment="center">
-                                <BadgeMessage>Features</BadgeMessage>
-                            </BadgeGroup>
+                        <SectionContainer id="properties" className="features">
+                            {" "}
                             <MotionBTTContainer
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
                                 <SectionContainer className="feature-tabs">
-                                    <BadgeGroup alignment="center">
-                                        <BadgeMessage>
-                                            Our Properties
-                                        </BadgeMessage>
-                                        <BadgeIcon icon="twemoji:waving-hand" />
-                                    </BadgeGroup>
-                                    <PageTitle
-                                        className="text-center mx-auto"
-                                        type="default"
-                                    >
-                                        Check out All our Different Properties!
-                                    </PageTitle>
-                                    <Content
-                                        className="text-center mb-12"
-                                        alignment="center"
-                                    >
-                                        <p>Take Control of Your Journey</p>
-                                    </Content>
-                                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                                    <div id="properties">
+                                        <PageTitle
+                                            className="text-center mx-auto"
+                                            type="default"
+                                        >
+                                            Check out All our Properties!
+                                        </PageTitle>
+                                    </div>
+                                    <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
                                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                                             {propertyData.map(
                                                 (property, index) => (
@@ -116,7 +107,6 @@ export default function Home() {
                                     </div>
                                 </SectionContainer>
                             </MotionBTTContainer>
-
                             <PageTitle
                                 className="text-center mx-auto pt-10"
                                 type="default"
@@ -137,11 +127,13 @@ export default function Home() {
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Testimonials */}
-                    <WhatToExpect />
-                    <AmenitiesHero />
+                    {/* <WhatToExpect /> */}
+                    <div id="amenities">
+                        <AmenitiesHero />
+                    </div>
                     <FeaturedCollection />
-                    <AdithTemp />
-                    <GalleryHero />
+                    {/* <AdithTemp /> */}
+                    {/* <GalleryHero /> */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -149,14 +141,17 @@ export default function Home() {
                             id="testimonials"
                             className="benefits"
                         >
-                            <BadgeGroup alignment="left">
-                                <BadgeMessage>Testimonials</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
-                            </BadgeGroup>
+                            <div id="testimonials">
+                                <BadgeGroup alignment="left">
+                                    <BadgeMessage>Testimonials</BadgeMessage>
+                                    <BadgeIcon icon="twemoji:waving-hand" />
+                                </BadgeGroup>
+                            </div>
                             <PageTitle className="" type="default">
                                 This is what our customers have to say about our
                                 properties
                             </PageTitle>
+
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
@@ -178,6 +173,7 @@ export default function Home() {
                                 you need:
                             </PageTitle>
                             <Accordion />
+                            <div id="longstay" />
                             <EnquiryForm />
                         </SectionContainer>
                     </MotionBTTContainer>

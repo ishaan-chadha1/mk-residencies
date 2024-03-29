@@ -12,11 +12,11 @@ export function EnquiryForm() {
         <div className="w-full px-4 py-8 space-y-4 md:px-6 md:space-y-8 bg-[#D1FAE5] rounded-lg shadow-lg">
             <div className="space-y-2">
                 <h2 className="text-3xl font-bold text-green-800">
-                    Enquire about corporate housing
+                    Enquire for long stays
                 </h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                    Fill out the form below and we&apos;ll get back to you as
-                    soon as possible.
+                    Fill in the form and our team will get back to you with the
+                    best rates.
                 </p>
             </div>
             <div className="space-y-4">

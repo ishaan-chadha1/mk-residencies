@@ -7,7 +7,7 @@ export function LandingHero() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-black">
                     <h1 className="text-5xl font-bold mb-4">
-                        Welcome to TeaCorp
+                        Welcome to TeaCorp Hotels
                     </h1>
                     <p className="mb-6 max-w-xl">Home Away From Home</p>
                     <div className="relative w-full">

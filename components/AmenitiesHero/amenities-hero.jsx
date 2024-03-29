@@ -4,23 +4,6 @@ import Image from "next/image";
 export function AmenitiesHero() {
     return (
         <div className="bg-transparent p-6">
-            <h2 className="text-2xl font-semibold mb-4">
-                Amenities for Remote Working
-            </h2>
-            <div className="flex flex-wrap gap-4 mb-8">
-                <Badge variant="outline">
-                    <WifiIcon className="mr-2 transform transition-transform hover:scale-110" />
-                    High-Speed Wi-Fi
-                </Badge>
-                <Badge variant="outline">
-                    <SignalIcon className="mr-2" />
-                    Quiet Workspaces
-                </Badge>
-                {/* <Badge variant="outline">
-                    <ContactIcon className="mr-2" />
-                    Meeting Rooms
-                </Badge> */}
-            </div>
             <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
             <div className="grid grid-cols-4 gap-4 mb-8">
                 <Badge variant="outline">
@@ -58,6 +41,19 @@ export function AmenitiesHero() {
                 <Badge variant="outline">
                     <StaffIcon className="mr-2" />
                     Dedicated Staff
+                </Badge>
+            </div>
+            <h2 className="text-2xl font-semibold mb-4">
+                Amenities for Remote Working
+            </h2>
+            <div className="flex flex-wrap gap-4 mb-8">
+                <Badge variant="outline">
+                    <WifiIcon className="mr-2 transform transition-transform hover:scale-110" />
+                    High-Speed Wi-Fi
+                </Badge>
+                <Badge variant="outline">
+                    <SignalIcon className="mr-2" />
+                    Workspaces
                 </Badge>
             </div>
             <div className="grid grid-cols-4 gap-4">

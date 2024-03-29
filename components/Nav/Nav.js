@@ -4,10 +4,11 @@ import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
 
 const navigation = [
-    { name: "Explore", to: "#features", href: "/#features" },
+    { name: "About Us", to: "#aboutus", href: "/#aboutus" },
     { name: "Testimonials", to: "#testimonials", href: "/#testimonials" },
-    { name: "For Work", to: "#testimonials", href: "/#testimonials" },
-    { name: "For Teams", to: "#testimonials", href: "/#testimonials" },
+    { name: "Our Properties", to: "#properties", href: "/#properties" },
+    { name: "Amenities", to: "#amenities", href: "/#amenities" },
+    { name: "Long Stay", to: "#longstay", href: "/#longstay" },
     {
         name: "Contact Us",
         href: "https://github.com/ishaan-chadha1",

@@ -15,7 +15,7 @@ export const Header = () => {
                 <div className="header-logo--container">
                     <h1 className="logo mb-0">
                         <Link href="/">
-                             <Image
+                            <Image
                                 src="/logo_page-0001.jpg"
                                 alt="logo"
                                 className="h-20 w-auto "
@@ -23,7 +23,7 @@ export const Header = () => {
                                 height="150"
                                 width="150"
                                 priority
-                            /> 
+                            />
                         </Link>
                     </h1>
                 </div>
