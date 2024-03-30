@@ -117,7 +117,7 @@ export function SearchBar() {
             </div>
             <Button
                 type="submit"
-                className="bg-orange-500 text-black px-6 py-3 rounded-lg flex items-center"
+                className="bg-transparent-500 text-black px-6 py-3 rounded-lg flex items-center"
             >
                 <SearchIcon />
                 Search
