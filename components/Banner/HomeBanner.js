@@ -12,8 +12,9 @@ export const HomeBanner = () => {
         <SectionContainer className="page-banner--container py-16">
             <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
                 {/* Appear First */}
-                <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
-                </MotionBTTContainer>
+                <MotionBTTContainer
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                ></MotionBTTContainer>
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
@@ -54,7 +55,7 @@ export const HomeBanner = () => {
                             height={680}
                             alt="Page Banner"
                             objectFit="cover"
-                            className="mx-auto"
+                            className="mx-auto overflow-hidden rounded-3xl"
                         />
                     </div>
                 </MotionBTTContainer>
