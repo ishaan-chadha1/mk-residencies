@@ -4,23 +4,31 @@ import { useState, useEffect } from "react";
 const properties = [
     {
         title: "Spacious Rooms",
-        images: [
-            "/DSC09323-HDR.jpg",
-            "/Suite 1.JPG",
-            "/Suite 2.jpg"
-        ]
+        images: ["/DSC09323-HDR.jpg", "/Suite 1.JPG", "/Suite 2.jpg"]
     },
     {
         title: "Dining Areas",
-        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+        images: [
+            "/103 Premium.JPG",
+            "/tp dinning area.jpg",
+            "/dinning _hall.jpg"
+        ]
     },
     {
         title: "Terrace",
-        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+        images: [
+            "/ts terrace.jpg",
+            "/tp terrace.jpeg",
+            "/ts terrace dining.jpeg"
+        ]
     },
     {
         title: "Reception",
-        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+        images: [
+            "/DSC09413-HDR.jpg",
+            "/ts reception.jpg",
+            "/tp recpetion 2.jpg"
+        ]
     }
 ];
 
