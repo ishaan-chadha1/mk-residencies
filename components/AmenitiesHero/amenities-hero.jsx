@@ -1,7 +1,41 @@
 import { Badge } from "@components/ui/badge";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+const properties = [
+    {
+        title: "Spacious Rooms",
+        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+    },
+    {
+        title: "Dining Areas",
+        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+    },
+    {
+        title: "Terrace",
+        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+    },
+    {
+        title: "Reception",
+        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+    }
+];
 
 export function AmenitiesHero() {
+    const [currentSlides, setCurrentSlides] = useState(
+        Array(properties.length).fill(0)
+    );
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlides((currentSlides) =>
+                currentSlides.map(
+                    (slide, index) =>
+                        (slide + 1) % properties[index].images.length
+                )
+            );
+        }, 3000); // Change image every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
     return (
         <div className="bg-transparent p-6">
             <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
@@ -56,69 +90,39 @@ export function AmenitiesHero() {
                     Workspaces
                 </Badge>
             </div>
-            <div className="grid grid-cols-4 gap-4">
-                <div>
-                    <Image
-                        alt=" Spacious Rooms"
-                        className="mb-2 rounded-lg transform transition-transform hover:scale-110"
-                        height="200"
-                        src="/DSC09323-HDR.jpg"
-                        style={{
-                            aspectRatio: "250/200",
-                            objectFit: "cover"
-                        }}
-                        width="250"
-                    />
-                    <h3 className="text-center text-sm font-medium">
-                        Spacious Rooms
-                    </h3>
-                </div>
-                <div>
-                    <Image
-                        alt="Dining Areas"
-                        className="mb-2 rounded-lg transform transition-transform hover:scale-110"
-                        height="200"
-                        src="/DSC09308-HDR.jpg"
-                        style={{
-                            aspectRatio: "250/200",
-                            objectFit: "cover"
-                        }}
-                        width="250"
-                    />
-                    <h3 className="text-center text-sm font-medium">
-                        Dining Areas
-                    </h3>
-                </div>
-                <div>
-                    <Image
-                        alt="Terrace"
-                        className="mb-2 rounded-lg transform transition-transform hover:scale-110"
-                        height="200"
-                        src="/ts terrace.jpg"
-                        style={{
-                            aspectRatio: "250/200",
-                            objectFit: "cover"
-                        }}
-                        width="250"
-                    />
-                    <h3 className="text-center text-sm font-medium">Terrace</h3>
-                </div>
-                <div>
-                    <Image
-                        alt="Reeption"
-                        className="mb-2 rounded-lg transform transition-transform hover:scale-110"
-                        height="200"
-                        src="/DSC09433-HDR.jpg"
-                        style={{
-                            aspectRatio: "250/200",
-                            objectFit: "cover"
-                        }}
-                        width="250"
-                    />
-                    <h3 className="text-center text-sm font-medium">
-                        Reception
-                    </h3>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                {properties.map((property, index) => (
+                    <div key={index} className="group">
+                        <div className="relative w-full h-64 overflow-hidden rounded-lg mb-2">
+                            {/* Carousel Image Container */}
+                            {property.images.map((src, imgIndex) => (
+                                <div
+                                    key={src}
+                                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                                        imgIndex === currentSlides[index]
+                                            ? "opacity-100"
+                                            : "opacity-0"
+                                    }`}
+                                >
+                                    <Image
+                                        src={src}
+                                        alt={`${property.title} - Slide ${
+                                            imgIndex + 1
+                                        }`}
+                                        layout="fill"
+                                        objectFit="cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="p-4 text-center">
+                            <h3 className="font-semibold text-lg leading-tight truncate">
+                                {property.title}
+                            </h3>
+                            {/* Additional details if needed */}
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
