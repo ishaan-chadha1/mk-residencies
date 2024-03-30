@@ -8,7 +8,7 @@ export function LandingHero() {
         <section
             style={{
                 backgroundImage: `url('${backgroundImageUrl}')`,
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "center",
                 padding: "64px 32px" // This converts py-16 px-8 to standard CSS
             }}
@@ -17,11 +17,6 @@ export function LandingHero() {
             {" "}
             <div className="max-w-7xl mx-auto">
                 <div className="text-black">
-                    <h1 className="text-5xl font-bold mb-4">
-                        Welcome to TeaCorp Hotels
-                    </h1>
-                    <p className="mb-6 max-w-xl">Home Away From Home</p>
-
                     <div className="relative w-full">
                         <SearchBar />
                     </div>

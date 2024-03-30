@@ -18,12 +18,15 @@ export const HomeBanner = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        About Us
+                        Welcome to TeaCorp Hotels
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}
                 <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
                     <Content className="text-center" alignment="center">
+                        <h3 className="text-3xl pt-10 font-bold mb-4">
+                            Home Away From Home
+                        </h3>
                         <p>
                             Step into a world where comfort meets convenience,
                             where every stay feels like a warm embrace. At
