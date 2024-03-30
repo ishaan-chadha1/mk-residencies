@@ -4,7 +4,12 @@ import { useState, useEffect } from "react";
 const properties = [
     {
         title: "Spacious Rooms",
-        images: ["/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg", "/DSC09308-HDR.jpg"]
+        images: [
+            "/Premium Room 1.jpg",
+            "/Premium Room.jpg",
+            "/Suite 1.JPG",
+            "/Suite 2.jpg"
+        ]
     },
     {
         title: "Dining Areas",
