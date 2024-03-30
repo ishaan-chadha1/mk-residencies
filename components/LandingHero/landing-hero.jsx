@@ -1,5 +1,6 @@
 import { Input } from "@components/ui/input";
 import { Button } from "@components/ui/button";
+import { SearchBar } from "@components/components/component/search-bar";
 
 export function LandingHero() {
     return (
@@ -10,14 +11,9 @@ export function LandingHero() {
                         Welcome to TeaCorp Hotels
                     </h1>
                     <p className="mb-6 max-w-xl">Home Away From Home</p>
+
                     <div className="relative w-full">
-                        <input
-                            className="w-full px-4 py-2 pl-10 bg-white/70 text-gray-900 rounded-md"
-                            placeholder="Where are you going?"
-                        />
-                        <button className="absolute inset-y-0 right-0 px-4 text-white bg-orange-500 rounded-r-md hover:bg-orange-600">
-                            Search
-                        </button>
+                        <SearchBar />
                     </div>
                 </div>
             </div>
