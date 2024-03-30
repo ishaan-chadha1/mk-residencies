@@ -10,7 +10,7 @@ const ContentImageData = [
         content:
             "Say goodbye to your planning stress! With TeaHouse, planning your accommmodation becomes a breeze. Our user-friendly experience lets you make bookings without a hassle directly.",
         align: "right",
-        image: "/DSC09413-HDR.jpg"
+        image: "/Corporate 1.JPG"
     },
     {
         id: uuid(),
@@ -18,7 +18,7 @@ const ContentImageData = [
         content:
             "Your comfort is our priority. At TeaHouse, experience a corporate stay where every detail is crafted to redefine comfort, making your team's comfort our utmost priority.",
         align: "left",
-        image: "/DSC09413-HDR.jpg"
+        image: "/Super Corporate Room.JPG"
     }
 ];
 
@@ -29,10 +29,10 @@ export const ContentImage = () => {
                 <div
                     id={item.id}
                     key={item.id}
-                    className="process-item--container grid md:grid-cols-2 gap-y-8"
+                    className="process-item--container grid md:grid-cols-2 gap-y-8 "
                 >
                     <div
-                        className={`process-item--image rounded-3xl ${
+                        className={`process-item--image overflow-hidden rounded-3xl ${
                             item.align === "left" ? "md:order-1" : ""
                         }`}
                     >
