@@ -68,14 +68,17 @@ export function SearchBar() {
                         <SelectValue placeholder="Select property" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value="hotel-sunrise">
-                            Hotel Sunrise
+                        <SelectItem value="tea-county">
+                            Tea County, Dibrugarh, Assam
                         </SelectItem>
-                        <SelectItem value="resort-oasis">
-                            Resort Oasis
+                        <SelectItem value="tea-harbour">
+                            Tea Harbour, Bangalore, Karnataka
                         </SelectItem>
-                        <SelectItem value="mountain-view-lodge">
-                            Mountain View Lodge
+                        <SelectItem value="tea-square">
+                            Tea Square, Bangalore, Karnataka
+                        </SelectItem>
+                        <SelectItem value="tea-pavillion">
+                            Tea Pavillion, Bangalore, Karnataka
                         </SelectItem>
                     </SelectContent>
                 </Select>
