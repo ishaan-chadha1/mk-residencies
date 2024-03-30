@@ -5,8 +5,7 @@ const properties = [
     {
         title: "Spacious Rooms",
         images: [
-            "/Premium Room 1.jpg",
-            "/Premium Room.jpg",
+            "/DSC09323-HDR.jpg",
             "/Suite 1.JPG",
             "/Suite 2.jpg"
         ]
