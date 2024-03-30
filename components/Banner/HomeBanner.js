@@ -18,7 +18,7 @@ export const HomeBanner = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        Welcome To TeaCorp Hotels
+                        About Us
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}

@@ -3,7 +3,7 @@ import { Button } from "@components/ui/button";
 import { SearchBar } from "@components/components/component/search-bar";
 
 export function LandingHero() {
-    const backgroundImageUrl = "/placeholder.svg?height=485&width=940";
+    const backgroundImageUrl = "/teabg.jpeg?height=485&width=940";
     return (
         <section
             style={{

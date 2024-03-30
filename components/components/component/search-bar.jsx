@@ -34,12 +34,13 @@ export function SearchBar() {
     const handleSubmit = async (event) => {
         event.preventDefault(); // Prevent the default form submission behavior
 
+        // Debug logs to ensure values are captured
+        console.log("Handling form submission");
         const formData = {
             property: selectedProperty,
             checkIn: checkInDate,
             checkOut: checkOutDate
         };
-
         console.log("Form Data:", formData);
 
         // Here you would typically send the formData to your backend API
@@ -48,9 +49,10 @@ export function SearchBar() {
 
     return (
         <form
+            name="booking"
             onSubmit={handleSubmit}
             className="max-w-7xl mx-auto p-6 flex items-end justify-between rounded-lg shadow-md"
-            style={{ backgroundColor: "springgreen" }}
+            style={{ backgroundColor: "orange" }}
         >
             <div className="flex-grow mr-4">
                 <label
@@ -115,7 +117,7 @@ export function SearchBar() {
             </div>
             <Button
                 type="submit"
-                className="bg-green-500 text-white px-6 py-3 rounded-lg flex items-center"
+                className="bg-orange-500 text-black px-6 py-3 rounded-lg flex items-center"
             >
                 <SearchIcon />
                 Search

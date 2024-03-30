@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import clsx from "clsx";
 
+// Define ButtonVariant here, before using it in the Button component
 const ButtonVariant = {
     primary: "btn--primary",
     secondary: "btn--secondary",
@@ -17,13 +18,22 @@ export const Button = ({
     variant = "primary",
     className = ""
 }) => {
-    const Element = type === "button" ? "button" : Link;
-    const variantClass = ButtonVariant[variant];
-    const buttonClass = clsx("btn", variantClass, className);
-    return (
-        <Element href={href} role="button" className={buttonClass}>
-            {children}
-            {icon?.length && <Icon icon={icon} />}
-        </Element>
-    );
+    // Now ButtonVariant is defined and can be used
+    const buttonClass = clsx("btn", ButtonVariant[variant], className);
+
+    if (type === "button" || type === "submit") {
+        return (
+            <button type={type} className={buttonClass}>
+                {children}
+                {icon && <Icon icon={icon} />}
+            </button>
+        );
+    } else {
+        return (
+            <Link href={href} role="button" className={buttonClass}>
+                {children}
+                {icon && <Icon icon={icon} />}
+            </Link>
+        );
+    }
 };
