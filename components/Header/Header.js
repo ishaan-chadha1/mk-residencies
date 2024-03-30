@@ -16,7 +16,7 @@ export const Header = () => {
                     <h1 className="logo mb-0">
                         <Link href="/">
                             <Image
-                                src="/logo_page-0001.jpg"
+                                src="/logo_page-0001.png"
                                 alt="logo"
                                 className="h-20 w-auto "
                                 style={{ borderRadius: 60 }}
