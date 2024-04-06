@@ -6,23 +6,6 @@ import { Icon } from "@iconify/react";
 
 const DATA = [
     {
-        title: "Properties",
-        items: [
-            {
-                label: "Features",
-                href: "#features"
-            },
-            {
-                label: "Testimonials",
-                href: "#testimonials"
-            },
-            {
-                label: "FAQ",
-                href: "#faq"
-            }
-        ]
-    },
-    {
         title: "Company",
         items: [
             {
@@ -83,6 +66,16 @@ export const Footer = () => {
             <SectionContainer className="footer--container wrap wrap-px relative z-10">
                 <div className="footer--content-container py-16">
                     <div className="footer-links mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-16">
+                        <ButtonGroup alignment="left">
+                            <a
+                                role="button"
+                                href="https://github.com/ishaan-chadha1"
+                                className="btn btn--secondary"
+                            >
+                                Make Booking
+                                <Icon icon="material-symbols:arrow-forward-rounded" />
+                            </a>
+                        </ButtonGroup>
                         {DATA.map((footerLinks) => (
                             <div
                                 key={footerLinks.title}
