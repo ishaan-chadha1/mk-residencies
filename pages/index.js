@@ -144,8 +144,8 @@ export default function Home() {
                                     We prioritize spacious comfort,
                                     affordability, and warm hospitality. Our
                                     mission is to provide maximum value for
-                                    every guest's money while prioritizing their
-                                    experience above all else.
+                                    every guest&rsquo;s money while prioritizing
+                                    their experience above all else.
                                 </p>
                             </Content>
                             <ContentImage />
