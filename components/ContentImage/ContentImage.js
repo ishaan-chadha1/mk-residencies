@@ -6,17 +6,17 @@ import { v4 as uuid } from "uuid";
 const ContentImageData = [
     {
         id: uuid(),
-        title: "Effortless Planning",
+        title: "Future Vision",
         content:
-            "Say goodbye to your planning stress! With TeaHouse, planning your accommmodation becomes a breeze. Our user-friendly experience lets you make bookings without a hassle directly.",
+            "We're committed to growing together with partners who share our values, enhancing facilities, and creating memorable experiences for every guest.",
         align: "right",
         image: "/Corporate 1.JPG"
     },
     {
         id: uuid(),
-        title: "Comfort Redefined",
+        title: "Join Us",
         content:
-            "Your comfort is our priority. At TeaHouse, experience a corporate stay where every detail is crafted to redefine comfort, making your team's comfort our utmost priority.",
+            "Whether you're here for business or leisure, join us on our journey to redefine hospitality and create unforgettable memories.",
         align: "left",
         image: "/Super Corporate Room.JPG"
     }

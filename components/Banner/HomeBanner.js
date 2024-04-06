@@ -28,11 +28,12 @@ export const HomeBanner = () => {
                             Home Away From Home
                         </h3>
                         <p>
-                            Step into a world where comfort meets convenience,
-                            where every stay feels like a warm embrace. At
-                            TeaCorp Hotels, we redefine hospitality, offering a
-                            haven amidst the bustling energy of Bangalore and
-                            the serene landscapes of Dibrugarh, Assam.{" "}
+                            Where comfort meets affordability and hospitality
+                            shines. With spacious rooms tailored for corporate
+                            travellers in Bangalore and a mix of corporate and
+                            leisure guests in Dibrugarh, Assam. We offer a
+                            silent sanctuary amidst bustling tech parks and
+                            picturesque tea gardens.{" "}
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">

@@ -24,39 +24,66 @@ import { GalleryHero } from "@components/GalleryHero/gallery-hero";
 import { FeaturedCollection } from "@components/FeaturedCollection/featured-collection";
 import { WhatToExpect } from "@components/WhatToExpect/what-to-expect";
 import { AdithTemp } from "@components/components/component/adith-temp";
+
 const propertyData = [
     {
-        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
-        title: "Tea County, Assam",
+        images: [
+            "/path/to/image1.jpg",
+            "/path/to/image2.jpg",
+            "/path/to/image3.jpg"
+        ],
+        title: "HOTEL TEA COUNTY",
         description:
-            "Nestled amidst lush greenery, the Tranquil Gardens offers a peaceful retreat for the weary soul.",
-        location: "Convoy Rd, Chowkidingee, Dibrugarh, Assam 786001"
+            "A tower hotel made to exacting standards of luxurious hospitality. Hotel Tea County (HTC) is a boutique property located in serene surroundings away from the traffic and national highway. The Hotel enjoys an enviable Three Star Status Accorded by The Ministry of Tourism, Government of India.",
+        location: "Convoy Road, Chowkidinghee, Dibrugarh, Assam 786011",
+        roomTypes: "Corporate, Super Corporate, Premium, Suite",
+        specialFeatures: "",
+        contactInfo: "hotelteacounty@gmail.com +91 7086061222 / 7578010089"
     },
     {
-        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
-        title: "Tea Harbour Corporate Hotel",
+        images: [
+            "/path/to/image4.jpg",
+            "/path/to/image5.jpg",
+            "/path/to/image6.jpg"
+        ],
+        title: "Tea Harbour",
         description:
-            "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
-        location:
-            "29-30, AET CIRCLE, Doddakannelli, Bengaluru, Karnataka 560035"
+            "Your gateway to serenity amidst Bangalore's tech hub, offering a seamless blend of modern convenience and serene surroundings along the Outer Ring Road.",
+        location: "AET CIRCLE, Doddakannelli, Bengaluru",
+        roomTypes: "Deluxe rooms only",
+        specialFeatures: "Dedicated work stations",
+        contactInfo: "teaharbour23@gmail.com, +91 9741848372"
     },
     {
-        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
+        images: [
+            "/path/to/image7.jpg",
+            "/path/to/image8.jpg",
+            "/path/to/image9.jpg"
+        ],
         title: "Tea Square",
         description:
-            "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
-        location:
-            "46, Compact Tea Square, near SOBHA MARVELLA APARTMENT, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103"
+            "Where tech and tranquility converge! Experience the perfect blend of urban convenience and peaceful surroundings near Bangalore's tech parks on the Outer Ring Road.",
+        location: "Green Glen Layout, Bellandur, Bangalore",
+        roomTypes: "Deluxe rooms, Standard room, Sharing PG rooms",
+        specialFeatures: "All price range rooms available",
+        contactInfo: "teasquare14@gmail.com, +91 9606699214"
     },
     {
-        images: ["/common_2.jpg", "/dinning _hall.jpg", "/ts terrace.jpg"],
-        title: "Tea Pavillion",
+        images: [
+            "/path/to/image10.jpg",
+            "/path/to/image11.jpg",
+            "/path/to/image12.jpg"
+        ],
+        title: "Tea Pavilion",
         description:
-            "Experience the vibrant pulse of the city from the comfort of the Urban Oasis.",
-        location:
-            "Plot No.139, 5th Cross Road, Koramangala 5th Block,17th Main Road, Behind Cafe Coffee Day, Bengaluru, Karnataka 560095"
+            "An urban oasis amidst Bangalore's lively dining and nightlife scene.",
+        location: "Koramangala, Bangalore",
+        roomTypes:
+            "Deluxe room, Suite room, Family room (2 deluxe rooms in one)",
+        specialFeatures:
+            "Located in the Guinness World Book of Records locality for most number of restaurants and pubs in a km radius.",
+        contactInfo: "teapavilion@gmail.com, +91 9632658687"
     }
-    // ... other property data
 ];
 
 export default function Home() {
@@ -110,19 +137,28 @@ export default function Home() {
                                 className="text-center mx-auto pt-10"
                                 type="default"
                             >
-                                Simplify Your Corporate Accommodation with
-                                TeaHouse
+                                Our Promise
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Hey there! Welcome to Tea House, the
-                                    ultimate corporate accommmodation .
-                                    We&apos;ve got some awesome features lined
-                                    up to make your journey as easy as possible.
-                                    Check them out:
+                                    We prioritize spacious comfort,
+                                    affordability, and warm hospitality. Our
+                                    mission is to provide maximum value for
+                                    every guest's money while prioritizing their
+                                    experience above all else.
                                 </p>
                             </Content>
                             <ContentImage />
+                            <Content
+                                className="text-center "
+                                alignment="center"
+                            >
+                                <p style={{ paddingTop: "100px" }}>
+                                    Discover comfort, convenience, and
+                                    affordability at TeaCorp Hotels. Welcome
+                                    home.
+                                </p>
+                            </Content>
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Testimonials */}

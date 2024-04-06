@@ -10,7 +10,14 @@ const accordionData = [
         title: "What are the check-in and check-out times at TeaCorp Hotels?",
         isOpen: true,
         content:
-            "Check-in time is at 122:00 PM, and check-out time is at 12:00 PM. We understand that travel plans may vary, so feel free to contact us for special arrangements."
+            "Check-in time is at 12 noon, and check-out time is at 12 noon. We understand that travel plans may vary, so feel free to contact us for special arrangements."
+    },
+    {
+        id: uuid(),
+        title: "Do you offer special packages or discounts for extended stays?",
+        isOpen: true,
+        content:
+            "Yes you can fill in the long stay enquiry form on our website and we shall contact you soon or you could contact the reservation team directly also."
     },
     {
         id: uuid(),

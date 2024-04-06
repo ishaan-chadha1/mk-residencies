@@ -47,7 +47,6 @@ export function PropCarousel({ property }) {
                     {property.title}
                 </h3>
                 <p className="text-sm text-gray-500">{property.location}</p>
-                {/* More information is displayed when hovered */}
                 <div
                     className={`transition-opacity duration-300 ${
                         isHovered ? "opacity-100" : "opacity-0"
@@ -56,18 +55,22 @@ export function PropCarousel({ property }) {
                     <p className="mt-2 text-gray-600 text-sm">
                         {property.description}
                     </p>
-                    {/* Include more property details here */}
-                    <p className="text-sm text-gray-600">
-                        Bedrooms: {property.bedrooms}
+                    <p className="mt-2 text-sm text-gray-600">
+                        Room Types: {property.roomTypes}
                     </p>
-                    <p className="text-sm text-gray-600">
-                        Bathrooms: {property.bathrooms}
-                    </p>
-                    <p className="text-sm text-gray-600">
-                        Price: {property.price}
-                    </p>
+                    {property.specialFeatures && ( // This line checks if specialFeatures is not empty before rendering
+                        <p className="mt-2 text-sm text-gray-600">
+                            Special Features: {property.specialFeatures}
+                        </p>
+                    )}
+                    <div className="px-6 pb-6">
+                        <p className="text-sm text-gray-600">
+                            Contact: {property.contactInfo}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     );
 }
+// Remember to update the image paths to match the actual paths in your project.

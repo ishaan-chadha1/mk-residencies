@@ -7,7 +7,6 @@ export function LandingHero() {
     return (
         <section
             style={{
-                backgroundImage: `url('${backgroundImageUrl}')`,
                 backgroundSize: "contain",
                 backgroundPosition: "center",
                 padding: "64px 32px" // This converts py-16 px-8 to standard CSS
