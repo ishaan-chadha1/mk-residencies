@@ -32,7 +32,7 @@ const propertyData = [
             "/path/to/image2.jpg",
             "/path/to/image3.jpg"
         ],
-        title: "HOTEL TEA COUNTY",
+        title: "TEA COUNTY",
         description:
             "A tower hotel made to exacting standards of luxurious hospitality. Hotel Tea County (HTC) is a boutique property located in serene surroundings away from the traffic and national highway. The Hotel enjoys an enviable Three Star Status Accorded by The Ministry of Tourism, Government of India.",
         location: "Convoy Road, Chowkidinghee, Dibrugarh, Assam 786011",
