@@ -22,7 +22,7 @@ export function ContactDropdown() {
         <div
             key="1"
             className="flex flex-col space-y-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800"
-            style={{ minWidth: "300px", maxWidth: "500px" }} // Adjust width as needed
+            style={{ minWidth: "600px", maxWidth: "800px" }} // Adjust width as needed
         >
             <h2 className="text-2xl font-bold mb-1">Contact Us</h2>
             <div className="flex flex-col">
