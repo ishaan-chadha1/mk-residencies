@@ -9,12 +9,7 @@ const navigation = [
     { name: "Our Properties", to: "#properties", href: "/#properties" },
     { name: "Amenities", to: "#amenities", href: "/#amenities" },
     { name: "Long Stay", to: "#longstay", href: "/#longstay" },
-    {
-        name: "Contact Us",
-        href: "https://github.com/ishaan-chadha1",
-        isArrow: true,
-        target: "_blank"
-    }
+    { name: "Contact Us ", to: "#contact", href: "/#contact" }
 ];
 
 export const Nav = () => {

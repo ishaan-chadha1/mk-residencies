@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { ContactDropdown } from "@components/components/component/contact-dropdown";
 
 const DATA = [
     {
@@ -65,7 +66,10 @@ export const Footer = () => {
         <footer id="footer" className="bg-white">
             <SectionContainer className="footer--container wrap wrap-px relative z-10">
                 <div className="footer--content-container py-16">
-                    <div className="footer-links mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-16">
+                    <div
+                        id="contact"
+                        className="footer-links mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-16"
+                    >
                         <ButtonGroup alignment="left">
                             <a
                                 role="button"
@@ -76,36 +80,7 @@ export const Footer = () => {
                                 <Icon icon="material-symbols:arrow-forward-rounded" />
                             </a>
                         </ButtonGroup>
-                        {DATA.map((footerLinks) => (
-                            <div
-                                key={footerLinks.title}
-                                className="footer-menu--container"
-                            >
-                                <h3 className="font-bold text-base mb-2">
-                                    {footerLinks.title}
-                                </h3>
-                                <ul className="footer-menu--list">
-                                    {footerLinks.items.map((footerItem) => (
-                                        <li
-                                            key={footerItem.label}
-                                            className="footer-menu--list-item gap-2"
-                                        >
-                                            <a
-                                                className="mb-2 block w-auto font-medium transition-colors duration-300 hover:underline"
-                                                href={footerItem.href}
-                                                target={
-                                                    footerItem.target
-                                                        ? footerItem.target
-                                                        : undefined
-                                                }
-                                            >
-                                                {footerItem.label}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
+                        <ContactDropdown />
                     </div>
                 </div>
             </SectionContainer>
