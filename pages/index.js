@@ -28,11 +28,12 @@ import { AdithTemp } from "@components/components/component/adith-temp";
 const propertyData = [
     {
         images: [
-            "/path/to/image1.jpg",
-            "/path/to/image2.jpg",
-            "/path/to/image3.jpg"
+            "/103 Premium 1.JPG",
+            "/Suite 5.JPG",
+            "/Bar.JPG",
+            "/Suite 2.jpg"
         ],
-        title: "TEA COUNTY",
+        title: "Tea County",
         description:
             "A tower hotel made to exacting standards of luxurious hospitality. Hotel Tea County (HTC) is a boutique property located in serene surroundings away from the traffic and national highway. The Hotel enjoys an enviable Three Star Status Accorded by The Ministry of Tourism, Government of India.",
         location: "Convoy Road, Chowkidinghee, Dibrugarh, Assam 786011",
@@ -42,9 +43,10 @@ const propertyData = [
     },
     {
         images: [
-            "/path/to/image4.jpg",
-            "/path/to/image5.jpg",
-            "/path/to/image6.jpg"
+            "/TH dinning area.jpg",
+            "/th room 3.jpg",
+            "/th room 4 .jpg",
+            "/DSC09323-HDR.jpg"
         ],
         title: "Tea Harbour",
         description:
@@ -56,9 +58,10 @@ const propertyData = [
     },
     {
         images: [
-            "/path/to/image7.jpg",
-            "/path/to/image8.jpg",
-            "/path/to/image9.jpg"
+            "/ts corporate room.jpg",
+            "/ts deluxe room .jpg",
+            "/ts reception.jpg",
+            "/ts twin deluxe.jpg"
         ],
         title: "Tea Square",
         description:
@@ -70,9 +73,10 @@ const propertyData = [
     },
     {
         images: [
-            "/path/to/image10.jpg",
-            "/path/to/image11.jpg",
-            "/path/to/image12.jpg"
+            "/tp deluxe room .jpg",
+            "/tp bedroom in suite room .jpg",
+            "/tp suite room.jpg",
+            "/tp recpetion 2.jpg"
         ],
         title: "Tea Pavilion",
         description:
