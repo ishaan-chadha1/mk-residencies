@@ -9,19 +9,19 @@ const testimonialsData = {
         {
             id: uuid(),
             name: "Bhaskar Rabha",
-            review: "I recently had the pleasure of staying at a hotel in the heart of Dibrugarh city, recommended by one of our employees, Mr. Dekhial. Our company booked an executive suite, and I was pleasantly surprised by the top-notch room amenities typically found in 5-star accommodations. The tariffs were reasonable, and the service was very good. The complimentary breakfast offered a variety of options to suit most tastes. I highly recommend this hotel for its quality ambiance, affordability, and the wonderful hospitality provided by the staff.",
+            review: "I had a pleasant stay at a hotel in Dibrugarh city, recommended by Mr. Dekhial. Our company booked an executive suite with top-notch amenities at reasonable tariffs. The complimentary breakfast was diverse, and the staff provided wonderful hospitality. Highly recommended for its quality ambiance and affordability.",
             rating: 5
         },
         {
             id: uuid(),
             name: "Priyakshi Bordoloi",
-            review: "I stayed for two days and I loved it. Their breakfast menu is really good. I loved the sauteed vegetables so much.. Maybe it is on their winter's menu (don't know..). Also, the staff is professional.",
+            review: "I stayed for two days and loved it. The breakfast menu, especially the sauteed vegetables, was really good. The staff is professional.",
             rating: 5
         },
         {
             id: uuid(),
             name: "Rumi 24fit",
-            review: "This place is always my favorite and is great! Atmosphere is mind blowing and fantastic, and the staff members are also really outstanding. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty lovely good, some and for their prices it’s 100% worth it. Thank you so much, we really enjoyed a lot.",
+            review: "This place is always my favorite! The atmosphere is mind-blowing, and the staff is outstanding. They prioritize customer happiness, and the food is pretty good. Totally worth the price. We really enjoyed a lot. Thank you!",
             rating: 5
         }
     ],
@@ -43,19 +43,19 @@ const testimonialsData = {
         {
             id: uuid(),
             name: "Surendra B",
-            review: "For our team meetup, we booked 30 rooms for a week here. Rooms are spacious and clean. Breakfast is homely tasty, they make fresh then and there. They serve fresh juice along with breakfast. Service is very quick. Everyone in the team felt this is better than any 4-star hotel in the surroundings. Space on the terrace is useful for small team activities too. I have coordinated with Mehul for the booking and he made the entire booking to billing so easy. He proactively checked if we need any additional facilities or service. I would definitely recommend this hotel for corporate bookings.",
+            review: "We booked 30 rooms for a week for our team meetup. The rooms are spacious and clean, with homely tasty breakfast and fresh juice. Service is quick, and the terrace is useful for team activities. Mehul made the booking process easy and checked if we needed additional facilities. Highly recommended for corporate bookings.",
             rating: 5
         },
         {
             id: uuid(),
             name: "Subrahmanya",
-            review: "Compact Tea Square Hotel offers a perfect blend of comfort, convenience, and hospitality. This hidden gem is sure to exceed your expectations. My stay was nothing short of exceptional, and I look forward to returning in the future.",
+            review: " Compact Tea Square Hotel offers comfort, convenience, and hospitality. My stay was exceptional, and I look forward to returning.",
             rating: 5
         },
         {
             id: uuid(),
             name: "Abhishek S",
-            review: "Not sure why this hotel has low ratings. Definitely an above 4 star rating hotel. Rooms are cozy and spacious. Liked it very much.",
+            review: "This hotel deserves above 4 stars. The rooms are cozy and spacious. Liked it very much.",
             rating: 5
         }
     ],
@@ -63,7 +63,7 @@ const testimonialsData = {
         {
             id: uuid(),
             name: "Jüßt- Üß",
-            review: "Friendly environment. I stayed there for 15 days. Provide good service. Morning complementary food is there, we can order coffee or omelet also. In the evening I ask for food, they provide a good quality home food for valuable cost. They maintained the room well and cleaned.",
+            review: " Friendly environment. I stayed for 15 days and received good service. Morning complementary food includes coffee or omelet. Evening food is good quality home food at a valuable cost. The room was well-maintained and cleaned.",
             rating: 5
         },
         {
