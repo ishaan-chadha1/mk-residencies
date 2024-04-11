@@ -1,15 +1,22 @@
 import { Badge } from "@components/ui/badge";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+
 const properties = [
     {
         title: "Spacious Rooms",
-        images: ["/DSC09323-HDR.jpg", "/Suite 1.JPG", "/Suite 2.jpg"]
+        images: [
+            "/Corporate 1.JPG",
+            "/DSC09323-HDR.jpg",
+            "/Suite 1.JPG",
+            "/Suite 2.jpg",
+            "/Premium Room 1.JPG"
+        ]
     },
     {
         title: "Dining Areas",
         images: [
-            "/103 Premium.JPG",
+            "/DSC09308-HDR.jpg",
             "/tp dinning area.jpg",
             "/dinning _hall.jpg"
         ]
@@ -27,7 +34,8 @@ const properties = [
         images: [
             "/DSC09413-HDR.jpg",
             "/ts reception.jpg",
-            "/tp recpetion 2.jpg"
+            "/tp recpetion 2.jpg",
+            "/Lobby & Reception 2.JPG"
         ]
     }
 ];
