@@ -6,20 +6,20 @@ export function FeaturedCollection() {
             <h2 className="text-2xl font-semibold mb-4">
                 Corporate Accommodation Near
             </h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-6 gap-5">
                 <div className="rounded-lg overflow-hidden">
                     <Image
                         alt="Strategic Location"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
-                        src="/ecosoace.jpg"
+                        src="/ecoworld.jpg"
                         style={{
                             aspectRatio: "300/200",
                             objectFit: "cover"
                         }}
                         width="300"
                     />
-                    <h3 className="text-lg font-medium mt-2 text-center">
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
                         RMZ Eco world
                     </h3>
                 </div>
@@ -35,61 +35,13 @@ export function FeaturedCollection() {
                         }}
                         width="300"
                     />
-                    <h3 className="text-lg font-medium mt-2 text-center">
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
                         RMZ Eco Space
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
                     <Image
                         alt="Strategic Location"
-                        className="w-full h-auto transform transition-transform hover:scale-105"
-                        height="200"
-                        src="/ecosoace.jpg"
-                        style={{
-                            aspectRatio: "300/200",
-                            objectFit: "cover"
-                        }}
-                        width="300"
-                    />
-                    <h3 className="text-lg font-medium mt-2 text-center">
-                        Embassy Tech Park
-                    </h3>
-                </div>
-                <div className="rounded-lg overflow-hidden">
-                    <Image
-                        alt="Strategic Location"
-                        className="w-full h-auto transform transition-transform hover:scale-105"
-                        height="200"
-                        src="/ecosoace.jpg"
-                        style={{
-                            aspectRatio: "300/200",
-                            objectFit: "cover"
-                        }}
-                        width="300"
-                    />
-                    <h3 className="text-lg font-medium mt-2 text-center">
-                        Prestige Ferns Galaxy
-                    </h3>
-                </div>
-                <div className="rounded-lg overflow-hidden">
-                    <Image
-                        alt="Proximity to Business Districts"
-                        className="w-full h-auto transform transition-transform hover:scale-105"
-                        height="200"
-                        src="/ecoworld.jpg"
-                        style={{
-                            aspectRatio: "300/200",
-                            objectFit: "cover"
-                        }}
-                        width="300"
-                    />
-                    <h3 className="text-lg font-medium mt-2 text-center">
-                        Salarpuria Softzone
-                    </h3>
-                </div>
-                <div className="rounded-lg overflow-hidden">
-                    <Image
-                        alt="Modern Tea-Infused Coworking Spaces"
                         className="w-full h-auto transform transition-transform hover:scale-105"
                         height="200"
                         src="/embassy.jpg"
@@ -99,7 +51,55 @@ export function FeaturedCollection() {
                         }}
                         width="300"
                     />
-                    <h3 className="text-lg font-medium mt-2 text-center">
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
+                        Embassy Tech Park
+                    </h3>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                    <Image
+                        alt="Strategic Location"
+                        className="w-full h-auto transform transition-transform hover:scale-105"
+                        height="200"
+                        src="/prestige.jpeg"
+                        style={{
+                            aspectRatio: "300/200",
+                            objectFit: "cover"
+                        }}
+                        width="300"
+                    />
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
+                        Prestige Ferns Galaxy
+                    </h3>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                    <Image
+                        alt="Proximity to Business Districts"
+                        className="w-full h-auto transform transition-transform hover:scale-105"
+                        height="200"
+                        src="/salarpuria.jpg"
+                        style={{
+                            aspectRatio: "300/200",
+                            objectFit: "cover"
+                        }}
+                        width="300"
+                    />
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
+                        Salarpuria Softzone
+                    </h3>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                    <Image
+                        alt="Proximity to Business Districts"
+                        className="w-full h-auto transform transition-transform hover:scale-105"
+                        height="200"
+                        src="/signature.jpg"
+                        style={{
+                            aspectRatio: "300/200",
+                            objectFit: "cover"
+                        }}
+                        width="300"
+                    />
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
                         Vaishnavi Signature
                     </h3>
                 </div>
