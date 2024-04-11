@@ -3,11 +3,11 @@ import { Button } from "@components/ui/button";
 import { SearchBar } from "@components/components/component/search-bar";
 
 export function LandingHero() {
-    const backgroundImageUrl = "/teabg.jpeg?height=485&width=940";
+    const backgroundImageUrl = "/photo 5.jpg?height=485&width=940";
     return (
         <section
             style={{
-                backgroundImage: "url('/teabg.jpeg')",
+                backgroundImage: "url('/photo 5.jpg')",
                 backgroundSize: "contain",
                 backgroundPosition: "center",
                 padding: "64px 32px" // This converts py-16 px-8 to standard CSS
