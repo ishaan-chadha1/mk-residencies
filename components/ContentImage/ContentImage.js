@@ -10,7 +10,7 @@ const ContentImageData = [
         content:
             "We're committed to growing together with partners who share our values, enhancing facilities, and creating memorable experiences for every guest.",
         align: "right",
-        image: "/Corporate 1.JPG"
+        image: "/DSC09413-HDR.jpg"
     },
     {
         id: uuid(),
@@ -18,7 +18,7 @@ const ContentImageData = [
         content:
             "Whether you're here for business or leisure, join us on our journey to redefine hospitality and create unforgettable memories.",
         align: "left",
-        image: "/Super Corporate Room.JPG"
+        image: "/ts deluxe room .jpg"
     }
 ];
 
