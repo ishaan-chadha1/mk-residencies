@@ -20,6 +20,7 @@ import {
     CardImage,
     Card
 } from "@components/Card";
+import { TermsAndConditions } from "@components/components/component/terms-and-conditions";
 import { GalleryHero } from "@components/GalleryHero/gallery-hero";
 import { FeaturedCollection } from "@components/FeaturedCollection/featured-collection";
 import { WhatToExpect } from "@components/WhatToExpect/what-to-expect";
@@ -214,6 +215,7 @@ export default function Home() {
                             <Accordion />
                             <div id="longstay" />
                             <EnquiryForm />
+                            <TermsAndConditions />
                         </SectionContainer>
                     </MotionBTTContainer>
                 </SectionContainer>
