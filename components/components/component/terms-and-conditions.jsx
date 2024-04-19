@@ -53,8 +53,8 @@ export function TermsAndConditions() {
                             this website.
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                            a) We are committed to ensuring that the guest's
-                            privacy is protected. Should we ask the
+                            a) We are committed to ensuring that the
+                            guest&apos;s privacy is protected. Should we ask the
                             visitor/guest to provide certain information by
                             which they can be identified when using this
                             website, then the visitor/guest can be assured that
