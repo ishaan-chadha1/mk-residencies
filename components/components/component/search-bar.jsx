@@ -52,7 +52,7 @@ export function SearchBar() {
             name="booking"
             onSubmit={handleSubmit}
             className="max-w-7xl mx-auto p-6 flex items-end justify-between rounded-lg shadow-md"
-            style={{ backgroundColor: "orange" }}
+            style={{ backgroundColor: "orange", minWidth: "1024px" }}
         >
             <div className="flex-grow mr-4">
                 <label
