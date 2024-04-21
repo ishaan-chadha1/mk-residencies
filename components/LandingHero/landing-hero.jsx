@@ -3,6 +3,7 @@ import { Button } from "@components/ui/button";
 import { SearchBar } from "@components/components/component/search-bar";
 
 export function LandingHero() {
+    const backgroundImageUrl = "/DJI_0481.JPG?height=485&width=940";
     return (
         <section
             style={{
