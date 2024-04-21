@@ -207,14 +207,22 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Got some questions about Tea House?{" "}
-                                <br></br>
+                                Got some questions about Tea House? <br></br>
                                 <br></br>No worries! We&apos;ve got the answers
                                 you need:
                             </PageTitle>
                             <Accordion />
                             <div id="longstay" />
                             <EnquiryForm />
+                            <script
+                                src="https://static.elfsight.com/platform/platform.js"
+                                data-use-service-core
+                                defer
+                            ></script>
+                            <div
+                                class="elfsight-app-7f278293-2342-4100-8d8b-f34f67e0ee88"
+                                data-elfsight-app-lazy
+                            ></div>
                             <TermsAndConditions />
                         </SectionContainer>
                     </MotionBTTContainer>
