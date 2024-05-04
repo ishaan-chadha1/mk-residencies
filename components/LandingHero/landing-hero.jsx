@@ -18,8 +18,8 @@ export function LandingHero() {
             className="bg-cover bg-center py-16 px-8"
         >
             {" "}
-            <div className="max-w-7xl mx-auto">
-                <div className="text-black">
+            <div className="max-w-7xl mx-auto pt-30">
+                <div className="text-black" style={{ paddingBottom: "200px" }}>
                     <div className="relative w-full">
                         <SearchBar />
                     </div>
