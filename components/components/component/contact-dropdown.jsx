@@ -10,12 +10,23 @@ import {
 export function ContactDropdown() {
     const [selectedProperty, setSelectedProperty] = useState("");
 
+    // Updated propertyContacts without 'tea-county'
     const propertyContacts = {
-        "tea-county":
-            "Tea County: +91 7086061222 / 7578010089, hotelteacounty@gmail.com",
-        "tea-pavilion": "Tea Pavilion: teapavilion@gmail.com, +91 9632658687",
-        "tea-harbour": "Tea Harbour: teaharbour23@gmail.com, +91 9741848372",
-        "tea-square": "Tea Square: teasquare14@gmail.com, +91 9606699214"
+        "tea-pavilion": {
+            contact: "Tea Pavilion: teapavilion@gmail.com, +91 9632658687",
+            address:
+                "Plot No.139, 5th Cross Road, Koramangala 5th Block ,17th Main Road , Behind Cafe Coffee Day, Bengaluru, Karnataka 560095"
+        },
+        "tea-harbour": {
+            contact: "Tea Harbour: teaharbour23@gmail.com, +91 9741848372",
+            address:
+                "29-30, AET CIRCLE, Doddakannelli, Bengaluru, Karnataka 560035"
+        },
+        "tea-square": {
+            contact: "Tea Square: teasquare14@gmail.com, +91 9606699214",
+            address:
+                " 46, Compact Tea Square, near SOBHA MARVELLA APARTMENT, Green Glen Layout, Bellandur, Bengaluru, Karnataka 560103"
+        }
     };
 
     return (
@@ -32,9 +43,6 @@ export function ContactDropdown() {
                             <SelectValue placeholder="Select Property" />
                         </SelectTrigger>
                         <SelectContent>
-                            <SelectItem value="tea-county">
-                                Tea County
-                            </SelectItem>
                             <SelectItem value="tea-pavilion">
                                 Tea Pavilion
                             </SelectItem>
@@ -47,12 +55,15 @@ export function ContactDropdown() {
                         </SelectContent>
                     </Select>
                 </div>
-                <div className="font-medium text-gray-500">
-                    {selectedProperty && (
+                {selectedProperty && (
+                    <div className="font-medium text-gray-500">
                         <p className="mb-2">
-                            {propertyContacts[selectedProperty]}
+                            {propertyContacts[selectedProperty].contact}
                         </p>
-                    )}
+                        <p>{propertyContacts[selectedProperty].address}</p>
+                    </div>
+                )}
+                <div className="font-medium text-gray-500">
                     <p>Management: mehulgoenka7@gmail.com</p>
                 </div>
             </div>
