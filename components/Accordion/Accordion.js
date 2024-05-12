@@ -24,7 +24,7 @@ const accordionData = [
         title: "Do you offer airport shuttle services?",
         isOpen: false,
         content:
-            "Yes, we provide airport shuttle services for our guests' convenience. Please inform us of your flight details in advance to make necessary arrangements."
+            "Yes, we provide airport shuttle services for our guests' convenience at an additional cost. Please inform us of your flight details in advance to make necessary arrangements."
     },
     {
         id: uuid(),
