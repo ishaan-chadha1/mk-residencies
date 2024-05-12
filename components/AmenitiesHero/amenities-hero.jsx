@@ -96,6 +96,10 @@ export function AmenitiesHero() {
                     <StaffIcon className="mr-2" />
                     Dedicated Staff
                 </Badge>
+                <Badge variant="outline">
+                    <ToiletIcon className="mr-2" />
+                    Branded Toiletries
+                </Badge>
             </div>
             <h2 className="text-2xl font-semibold mb-4">
                 Amenities for Remote Working
@@ -212,6 +216,31 @@ function ContactIcon(props) {
             <circle cx="12" cy="10" r="2" />
             <line x1="8" x2="8" y1="2" y2="4" />
             <line x1="16" x2="16" y1="2" y2="4" />
+        </svg>
+    );
+}
+
+function ToiletIcon(props) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 511 511" // Adjusted to maintain the aspect ratio
+            fill="none" // No fill to use the currentColor
+            stroke="currentColor" // Use currentColor for stroke
+            strokeWidth="20" // Adjust stroke width to scale with size
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <path
+                d="M423.5,0h-336C74.542,0,64,10.542,64,23.5v64c0,21.379,9.444,40.582,24.364,53.696C88.13,141.922,88,142.696,88,143.5v200
+                C88,435.86,163.14,511,255.5,511S423,435.86,423,343.5v-200c0-0.804-0.13-1.578-0.364-2.304C437.556,128.082,447,108.879,447,87.5
+                v-64C447,10.542,436.458,0,423.5,0z M408,343.5c0,84.089-68.411,152.5-152.5,152.5S103,427.589,103,343.5V151.154
+                c9.759,5.003,20.8,7.846,32.5,7.846h240c11.7,0,22.741-2.843,32.5-7.846V343.5z M432,87.5c0,31.154-25.346,56.5-56.5,56.5h-240
+                C104.346,144,79,118.654,79,87.5v-64c0-4.687,3.813-8.5,8.5-8.5h336c4.687,0,8.5,3.813,8.5,8.5V87.5z"
+            />
         </svg>
     );
 }
