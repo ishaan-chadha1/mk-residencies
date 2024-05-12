@@ -146,11 +146,11 @@ export default function Home() {
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    We prioritize spacious comfort,
-                                    affordability, and warm hospitality. Our
+                                    We prioritize spacious, comfortable,
+                                    affordable, and warm hospitality. Our
                                     mission is to provide maximum value for
-                                    every guest&rsquo;s money while prioritizing
-                                    their experience above all else.
+                                    every guest&rsquo;s money, while
+                                    prioritizing their experience above all.
                                 </p>
                             </Content>
                             <ContentImage />
