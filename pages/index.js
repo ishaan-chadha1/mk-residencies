@@ -29,21 +29,6 @@ import { AdithTemp } from "@components/components/component/adith-temp";
 const propertyData = [
     {
         images: [
-            "/103 Premium 1.JPG",
-            "/Suite 5.JPG",
-            "/Bar.JPG",
-            "/Suite 2.jpg"
-        ],
-        title: "Tea County",
-        description:
-            "A tower hotel made to exacting standards of luxurious hospitality. Hotel Tea County (HTC) is a boutique property located in serene surroundings away from the traffic and national highway. The Hotel enjoys an enviable Three Star Status Accorded by The Ministry of Tourism, Government of India.",
-        location: "Convoy Road, Chowkidinghee, Dibrugarh, Assam 786011",
-        roomTypes: "Corporate, Super Corporate, Premium, Suite",
-        specialFeatures: "",
-        contactInfo: "hotelteacounty@gmail.com +91 7086061222 / 7578010089"
-    },
-    {
-        images: [
             "/TH dinning area.jpg",
             "/th room 3.jpg",
             "/th room 4 .jpg",
@@ -52,7 +37,7 @@ const propertyData = [
         title: "Tea Harbour",
         description:
             "Your gateway to serenity amidst Bangalore's tech hub, offering a seamless blend of modern convenience and serene surroundings along the Outer Ring Road.",
-        location: "AET CIRCLE, Doddakannelli, Bengaluru",
+        location: "AET CIRCLE, Doddakannelli, Bangalore",
         roomTypes: "Deluxe rooms only",
         specialFeatures: "Dedicated work stations",
         contactInfo: "teaharbour23@gmail.com, +91 9741848372"
@@ -125,7 +110,7 @@ export default function Home() {
                                         </PageTitle>
                                     </div>
                                     <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                                             {propertyData.map(
                                                 (property, index) => (
                                                     <PropCarousel
