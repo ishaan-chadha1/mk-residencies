@@ -14,9 +14,9 @@ const ContentImageData = [
     },
     {
         id: uuid(),
-        title: "Join Us",
+        title: "Stay With Us",
         content:
-            "Whether you're here for business or leisure, join us on our journey to redefine hospitality and create unforgettable memories.",
+            "Whether you're here for business or leisure, stay with us on our journey to redefine hospitality and create unforgettable memories.",
         align: "left",
         image: "/ts deluxe room .jpg"
     }

@@ -30,10 +30,8 @@ export const HomeBanner = () => {
                         <p>
                             Where comfort meets affordability and hospitality
                             shines. With spacious rooms tailored for corporate
-                            travellers in Bangalore and a mix of corporate and
-                            leisure guests in Dibrugarh, Assam. We offer a
-                            silent sanctuary amidst bustling tech parks and
-                            picturesque tea gardens.{" "}
+                            travellers in Bangalore and a mix of corporate. We
+                            offer a silent sanctuary amidst bustling tech parks.{" "}
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">
