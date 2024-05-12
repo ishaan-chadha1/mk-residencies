@@ -9,7 +9,7 @@ export function TermsAndConditions() {
                 </div>
                 <div className="space-y-4 text-left max-w-3xl">
                     <div className="space-y-2">
-                        <h3 className="text-lg font-semibold text-center">
+                        <h3 className="text-lg font-semibold text-lg">
                             Terms of Services
                         </h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -31,10 +31,10 @@ export function TermsAndConditions() {
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
                             e) An early check-in or a late check-out is a matter
-                            of the availability of room.
+                            of the availability of room and maybe chargeable.
                         </p>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                            e) Upon cancellation of refundable booking the
+                            f) Upon cancellation of refundable booking the
                             refund processing will take time between two to four
                             weeks to show the refund back on your credit card or
                             bank statement by deducting bank or credit card
@@ -44,7 +44,7 @@ export function TermsAndConditions() {
                         </p>
                     </div>
                     <div className="space-y-2">
-                        <h3 className="text-lg font-semibold">
+                        <h3 className="text-lg font-semibold pt-2">
                             Privacy Policy
                         </h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
