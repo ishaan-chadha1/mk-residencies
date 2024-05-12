@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export const HomeBanner = () => {
     return (
-        <SectionContainer className="page-banner--container py-16">
+        <SectionContainer className="page-banner--container py-10">
             <SectionContainer className="page-banner--inner-container wrap wrap-px z-10">
                 {/* Appear First */}
                 <MotionBTTContainer
@@ -17,16 +17,16 @@ export const HomeBanner = () => {
                 ></MotionBTTContainer>
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
-                    <PageTitle className="text-center mx-auto" type="heavy">
+                    {/* <PageTitle className="text-center mx-auto" type="heavy">
                         Welcome to TeaCorp Hotels
-                    </PageTitle>
+                    </PageTitle> */}
                 </MotionBTTContainer>
                 {/* Appear Third */}
                 <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
                     <Content className="text-center" alignment="center">
-                        <h3 className="text-3xl font-bold mb-4">
+                        {/* <h3 className="text-3xl font-bold mb-4">
                             Home Away From Home
-                        </h3>
+                        </h3> */}
                         <p>
                             Where comfort meets affordability and hospitality
                             shines. With spacious rooms tailored for corporate
