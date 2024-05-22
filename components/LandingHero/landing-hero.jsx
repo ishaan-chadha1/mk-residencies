@@ -32,10 +32,10 @@ export function LandingHero() {
                         textShadow: "2px 2px 8px rgba(0,0,0,0.8)" // Adds shadow to text
                     }}
                 >
-                    <h1 style={{ fontWeight: "bold", fontSize: "2rem" }}>
+                    <h1 style={{ fontWeight: "bold", fontSize: "3rem" }}>
                         TeaCorpHotels
                     </h1>
-                    <p style={{ fontSize: "1.5rem" }}>Home Away From Home</p>
+                    <p style={{ fontSize: "2rem" }}>Home Away From Home</p>
                 </div>
             </section>
             {/* SearchBar container */}
