@@ -70,9 +70,6 @@ export function SearchBar() {
                         <SelectValue placeholder="Select property" />
                     </SelectTrigger>
                     <SelectContent>
-                        <SelectItem value="tea-county">
-                            Tea County, Dibrugarh, Assam
-                        </SelectItem>
                         <SelectItem value="tea-harbour">
                             Tea Harbour, Bangalore, Karnataka
                         </SelectItem>
