@@ -6,7 +6,7 @@ export function FeaturedCollection() {
             <h2 className="text-2xl font-semibold mb-4">
                 Corporate Accommodation Near
             </h2>
-            <div className="grid grid-cols-6 gap-5">
+            <div className="grid grid-cols-7 gap-5">
                 <div className="rounded-lg overflow-hidden">
                     <Image
                         alt="Strategic Location"
@@ -53,6 +53,22 @@ export function FeaturedCollection() {
                     />
                     <h3 className="text-lg font-medium mt-2 text-center mb-0">
                         Embassy Tech Park
+                    </h3>
+                </div>
+                <div className="rounded-lg overflow-hidden">
+                    <Image
+                        alt="Strategic Location"
+                        className="w-full h-auto transform transition-transform hover:scale-105"
+                        height="200"
+                        src="/startech.jpg"
+                        style={{
+                            aspectRatio: "300/200",
+                            objectFit: "cover"
+                        }}
+                        width="300"
+                    />
+                    <h3 className="text-lg font-medium mt-2 text-center mb-0">
+                        RMZ StarTech Park
                     </h3>
                 </div>
                 <div className="rounded-lg overflow-hidden">
