@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 // Assuming these components are correctly imported
 import {
     Select,
@@ -74,10 +73,9 @@ export function SearchBar() {
                             Tea Harbour, near to EcoWorld, EcoSpace, Embassy
                             Tech Park, Bangalore
                         </SelectItem>
-                        <SelectItem value="tea-square">
+                        <SelectItem value="tea-square" className="select-value">
                             Tea Square, close to Prestige Ferns galaxy,
-                            Salarpuria SoftZone, Vaishnavi
-                            Signature, Bangalore
+                            Salarpuria SoftZone, Vaishnavi Signature, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-pavillion">
                             Tea Pavillion, close to StarTech Park, Bangalore
