@@ -52,7 +52,7 @@ export function SearchBar() {
             name="booking"
             onSubmit={handleSubmit}
             className="max-w-7xl mx-auto p-6 flex items-end justify-between rounded-lg shadow-md"
-            style={{ backgroundColor: "orange", minWidth: "1024px" }}
+            style={{ backgroundColor: "orange", width: "1200px" }}
         >
             <div className="flex-grow mr-4">
                 <label
@@ -71,13 +71,16 @@ export function SearchBar() {
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="tea-harbour">
-                            Tea Harbour, Bangalore, Karnataka
+                            Tea Harbour, near to EcoWorld, EcoSpace, Embassy
+                            Tech Park, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-square">
-                            Tea Square, Bangalore, Karnataka
+                            Tea Square, close to Prestige Ferns galaxy,
+                            Salarpuria SoftZone and Vaishnavi
+                            Signature, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-pavillion">
-                            Tea Pavillion, Bangalore, Karnataka
+                            Tea Pavillion, close to StarTech Park, Bangalore
                         </SelectItem>
                     </SelectContent>
                 </Select>
