@@ -76,7 +76,7 @@ export function SearchBar() {
                         </SelectItem>
                         <SelectItem value="tea-square">
                             Tea Square, close to Prestige Ferns galaxy,
-                            Salarpuria SoftZone and Vaishnavi
+                            Salarpuria SoftZone, Vaishnavi
                             Signature, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-pavillion">
