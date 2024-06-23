@@ -35,7 +35,9 @@ export function LandingHero() {
                     <h1 style={{ fontWeight: "bold", fontSize: "3rem" }}>
                         TeaCorpHotels
                     </h1>
-                    <p style={{ fontSize: "2rem" }}>Home Away From Home</p>
+                    <p style={{ fontSize: "2rem" }}>
+                        Chain of Corporate business hotels
+                    </p>
                 </div>
             </section>
             {/* SearchBar container */}
