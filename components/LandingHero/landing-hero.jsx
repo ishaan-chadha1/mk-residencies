@@ -36,7 +36,7 @@ export function LandingHero() {
                         TeaCorpHotels
                     </h1>
                     <p style={{ fontSize: "2rem" }}>
-                        Chain of Corporate business hotels
+                        Chain of Corporate hotels
                     </p>
                 </div>
             </section>
