@@ -70,15 +70,17 @@ export function SearchBar() {
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="tea-harbour">
-                            Tea Harbour, near to EcoWorld, EcoSpace, Embassy
-                            Tech Park, Bangalore
+                            Tea Harbour, AET circle, near to EcoWorld, EcoSpace,
+                            Embassy Tech Park, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-square" className="select-value">
-                            Tea Square, close to Prestige Ferns galaxy,
-                            Salarpuria SoftZone, Vaishnavi Signature, Bangalore
+                            Tea Square, Green Glen Layout, close to Prestige
+                            Ferns galaxy, Salarpuria SoftZone, Vaishnavi
+                            Signature, Bangalore
                         </SelectItem>
                         <SelectItem value="tea-pavillion">
-                            Tea Pavillion, close to StarTech Park, Bangalore
+                            Tea Pavillion, Kormangala, close to StarTech Park,
+                            Bangalore
                         </SelectItem>
                     </SelectContent>
                 </Select>
