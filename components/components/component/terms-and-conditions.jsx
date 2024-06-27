@@ -3,7 +3,10 @@ export function TermsAndConditions() {
         <div key="1" className="w-full py-6 space-y-6">
             <div className="container px-4 md:px-6 flex flex-col items-center">
                 <div className="space-y-2 text-center pt-20">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl/none">
+                    <h2
+                        id="terms"
+                        className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl/none"
+                    >
                         Terms & Conditions
                     </h2>
                 </div>

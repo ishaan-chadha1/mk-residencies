@@ -9,7 +9,8 @@ const navigation = [
     { name: "Our Properties", to: "#properties", href: "/#properties" },
     { name: "Amenities", to: "#amenities", href: "/#amenities" },
     { name: "Long Stay", to: "#longstay", href: "/#longstay" },
-    { name: "Contact Us ", to: "#contact", href: "/#contact" }
+    { name: "Contact Us ", to: "#contact", href: "/#contact" },
+    { name: "T&C", to: "#terms", href: "/#terms" }
 ];
 
 export const Nav = () => {
