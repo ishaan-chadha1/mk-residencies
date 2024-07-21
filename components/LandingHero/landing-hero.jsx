@@ -1,10 +1,10 @@
 import { SearchBar } from "@components/components/component/search-bar";
+import styles from "./landing-hero.module.css"; // Import the CSS module
 
 export function LandingHero() {
     const backgroundImageUrl = "/03. 5 COPIES.jpg?height=485&width=940";
     return (
         <div>
-            {" "}
             {/* Wrapper div to contain all elements */}
             <section
                 style={{
@@ -15,34 +15,21 @@ export function LandingHero() {
                     flexDirection: "column", // Adjust the flex direction to column to stack items vertically
                     alignItems: "center", // Center vertically
                     height: "400px", // Set a fixed height to match your desired look
-                    position: "relative" // Make sure the section is positioned relatively for absolute children
+                    position: "relative", // Make sure the section is positioned relatively for absolute children
+                    padding: "0 20px" // Add padding for better mobile view
                 }}
-                className="bg-cover bg-center py-16 px-8"
+                className={`${styles.landingHero} bg-cover bg-center py-16 px-8`}
             >
                 {/* Text overlay */}
-                <div
-                    style={{
-                        position: "absolute",
-                        top: "20%",
-                        left: "5%",
-                        color: "white",
-                        padding: "10px",
-                        maxWidth: "80%",
-                        textAlign: "left",
-                        textShadow: "2px 2px 8px rgba(0,0,0,0.8)" // Adds shadow to text
-                    }}
-                >
-                    <h1 style={{ fontWeight: "bold", fontSize: "3rem" }}>
-                        TeaCorpHotels
-                    </h1>
-                    <p style={{ fontSize: "2rem" }}>
+                <div className={styles.landingHeroText}>
+                    <h1 className={styles.landingHeroTitle}>TeaCorpHotels</h1>
+                    <p className={styles.landingHeroSubtitle}>
                         Chain of Corporate hotels
                     </p>
                 </div>
             </section>
             {/* SearchBar container */}
             <div className="w-full flex justify-center mt-4">
-                {" "}
                 {/* Additional container for search bar */}
                 <SearchBar />
             </div>
