@@ -56,10 +56,11 @@ export function AmenitiesHero() {
         }, 3000); // Change image every 3 seconds
         return () => clearInterval(interval);
     }, []);
+
     return (
         <div className="bg-transparent p-6">
             <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
-            <div className="grid grid-cols-4 gap-4 mb-8">
+            <div className="amenities-grid grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
                 <Badge variant="outline">
                     <UtensilsIcon className="mr-2" />
                     In-House Kitchen
@@ -118,7 +119,6 @@ export function AmenitiesHero() {
                 {properties.map((property, index) => (
                     <div key={index} className="group">
                         <div className="relative w-full h-64 overflow-hidden rounded-lg mb-2">
-                            {/* Carousel Image Container */}
                             {property.images.map((src, imgIndex) => (
                                 <div
                                     key={src}
@@ -143,11 +143,23 @@ export function AmenitiesHero() {
                             <h3 className="font-semibold text-lg leading-tight truncate">
                                 {property.title}
                             </h3>
-                            {/* Additional details if needed */}
                         </div>
                     </div>
                 ))}
             </div>
+            <style jsx>{`
+                .amenities-grid {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 1rem;
+                }
+
+                @media (min-width: 768px) {
+                    .amenities-grid {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+            `}</style>
         </div>
     );
 }
