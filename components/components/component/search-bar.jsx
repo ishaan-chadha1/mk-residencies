@@ -9,6 +9,7 @@ import {
 } from "@components/components/ui/select";
 import { Input } from "@components/components/ui/input";
 import { Button } from "@components/Button";
+import styles from "./search-bar.module.css"; // Import the CSS module
 
 function SearchIcon() {
     return (
@@ -50,10 +51,10 @@ export function SearchBar() {
         <form
             name="booking"
             onSubmit={handleSubmit}
-            className="max-w-7xl mx-auto p-6 flex items-end justify-between rounded-lg shadow-md"
-            style={{ backgroundColor: "orange", width: "1200px" }}
+            className={`${styles.searchBarForm} max-w-7xl mx-auto p-6 flex items-end justify-between rounded-lg shadow-md`}
+            style={{ backgroundColor: "orange" }}
         >
-            <div className="flex-grow mr-4">
+            <div className={`${styles.formGroup} flex-grow mr-4`}>
                 <label
                     htmlFor="property-name"
                     className="block mb-1 text-sm font-medium text-gray-700"
@@ -85,7 +86,7 @@ export function SearchBar() {
                     </SelectContent>
                 </Select>
             </div>
-            <div className="mr-4">
+            <div className={`${styles.formGroup} mr-4`}>
                 <label
                     htmlFor="check-in"
                     className="block mb-1 text-sm font-medium text-gray-700"
@@ -100,7 +101,7 @@ export function SearchBar() {
                     onChange={(e) => setCheckInDate(e.target.value)}
                 />
             </div>
-            <div className="mr-4">
+            <div className={`${styles.formGroup} mr-4`}>
                 <label
                     htmlFor="check-out"
                     className="block mb-1 text-sm font-medium text-gray-700"
@@ -117,7 +118,7 @@ export function SearchBar() {
             </div>
             <Button
                 type="submit"
-                className="bg-transparent-500 text-black px-6 py-3 rounded-lg flex items-center"
+                className={`${styles.submitButton} bg-transparent-500 text-black px-6 py-3 rounded-lg flex items-center`}
             >
                 <SearchIcon />
                 Search
