@@ -10,7 +10,6 @@ import {
 export function ContactDropdown() {
     const [selectedProperty, setSelectedProperty] = useState("");
 
-    // Updated propertyContacts without 'tea-county'
     const propertyContacts = {
         "tea-pavilion": {
             contact: "Tea Pavilion: teapavilion@gmail.com, +91 9632658687",
@@ -32,8 +31,7 @@ export function ContactDropdown() {
     return (
         <div
             key="1"
-            className="flex flex-col space-y-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800"
-            style={{ minWidth: "600px", maxWidth: "800px" }} // Adjust width as needed
+            className="contact-dropdown flex flex-col space-y-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800"
         >
             <h2 className="text-2xl font-bold mb-1">Contact Us</h2>
             <div className="flex flex-col">
@@ -67,6 +65,26 @@ export function ContactDropdown() {
                     <p>Management: mehulgoenka7@gmail.com</p>
                 </div>
             </div>
+            <style jsx>{`
+                .contact-dropdown {
+                    min-width: 600px;
+                    max-width: 800px;
+                }
+
+                @media (max-width: 600px) {
+                    .contact-dropdown {
+                        min-width: 100%;
+                        padding: 1rem;
+                    }
+                    .text-2xl {
+                        font-size: 1.5rem;
+                    }
+                    .flex.justify-between {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+            `}</style>
         </div>
     );
 }
