@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
 import { ContactDropdown } from "@components/components/component/contact-dropdown";
+import { BookingButton } from "@components/components/component/booking-button";
 
 const DATA = [
     {
@@ -71,14 +72,7 @@ export const Footer = () => {
                         className="footer-links mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mb-16"
                     >
                         <ButtonGroup alignment="left">
-                            <a
-                                role="button"
-                                href="https://github.com/ishaan-chadha1"
-                                className="btn btn--secondary"
-                            >
-                                Make Booking
-                                <Icon icon="material-symbols:arrow-forward-rounded" />
-                            </a>
+                            <BookingButton />
                         </ButtonGroup>
                         <ContactDropdown />
                     </div>

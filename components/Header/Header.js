@@ -4,6 +4,7 @@ import { SectionContainer } from "@components/Section";
 import { Nav } from "@components/Nav";
 import { ButtonGroup, Button } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { BookingButton } from "@components/components/component/booking-button";
 
 export const Header = () => {
     return (
@@ -27,18 +28,11 @@ export const Header = () => {
                         </Link>
                     </h1>
                 </div>
-                <SectionContainer className="flex items-center ml-auto">
+                <SectionContainer className="flex items-center ml-auto ">
                     <Nav />
-                    <ButtonGroup className="hidden md:block">
-                        <a
-                            role="button"
-                            href="https://github.com/ishaan-chadha1"
-                            className="btn btn--secondary ml-4"
-                        >
-                            Make a Booking
-                            <Icon icon="material-symbols:arrow-forward-rounded" />
-                        </a>
-                    </ButtonGroup>
+                    <div className="ml-5">
+                        <BookingButton />
+                    </div>
                 </SectionContainer>
             </SectionContainer>
         </header>

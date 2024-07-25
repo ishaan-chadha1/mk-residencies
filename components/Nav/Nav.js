@@ -60,12 +60,7 @@ export const Nav = () => {
                                 >
                                     {item.name}
                                     {item.isArrow && (
-                                        <span className="ml-2 inline-block text-sm font-medium text-inherit">
-                                            <Icon
-                                                icon="material-symbols:arrow-outward"
-                                                className="h-6 w-auto"
-                                            />
-                                        </span>
+                                        <span className="ml-2 inline-block text-sm font-medium text-inherit"></span>
                                     )}
                                 </a>
                             </li>

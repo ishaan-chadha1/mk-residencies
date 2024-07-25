@@ -1,5 +1,6 @@
 import { SearchBar } from "@components/components/component/search-bar";
 import styles from "./landing-hero.module.css"; // Import the CSS module
+import { BookingButton } from "@components/components/component/booking-button";
 
 export function LandingHero() {
     const backgroundImageUrl = "/03. 5 COPIES.jpg?height=485&width=940";
@@ -29,9 +30,10 @@ export function LandingHero() {
                 </div>
             </section>
             {/* SearchBar container */}
-            <div className="w-full flex justify-center mt-4">
+            <div className="w-full flex justify-center mt-10">
                 {/* Additional container for search bar */}
-                <SearchBar />
+                {/* <SearchBar /> */}
+                {/* <BookingButton /> */}
             </div>
         </div>
     );

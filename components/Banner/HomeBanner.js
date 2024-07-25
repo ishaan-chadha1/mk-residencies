@@ -1,5 +1,6 @@
 import { BadgeGroup, BadgeIcon, BadgeMessage } from "@components/Badge";
 import { Button, ButtonGroup } from "@components/Button";
+import { BookingButton } from "@components/components/component/booking-button";
 import { Content } from "@components/Content";
 import { MotionBTTContainer, MotionInfiniteImage } from "@components/Motion";
 import { SectionContainer } from "@components/Section";
@@ -37,14 +38,7 @@ export const HomeBanner = () => {
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
                             <Button href="#amenities">Amenities</Button>
-                            <a
-                                role="button"
-                                href="https://github.com/ishaan-chadha1"
-                                className="btn btn--secondary"
-                            >
-                                Make Booking
-                                <Icon icon="material-symbols:arrow-forward-rounded" />
-                            </a>
+                            <BookingButton />
                         </ButtonGroup>
                     </div>
                 </MotionBTTContainer>
