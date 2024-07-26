@@ -21,7 +21,7 @@ export function BookingButton() {
             </DropdownMenuTrigger>
             <DropdownMenuContent
                 align="end"
-                className="w-[200px] animate-fade-in-up bg-[#FFA500]"
+                className="w-[250px] animate-fade-in-up bg-[#FFA500]"
             >
                 <DropdownMenuItem>
                     <Link
@@ -30,7 +30,7 @@ export function BookingButton() {
                         prefetch={false}
                     >
                         <div className="flex items-center gap-2">
-                            <div>Tea Pavillion</div>
+                            <div>Tea Pavillion, Koramangala</div>
                         </div>
                         <ArrowRightIcon className="h-4 w-4 ml-2" />
                     </Link>
@@ -42,7 +42,7 @@ export function BookingButton() {
                         prefetch={false}
                     >
                         <div className="flex items-center gap-2">
-                            <div>Tea Square</div>
+                            <div>Tea Square, Bellandur</div>
                         </div>
                         <ArrowRightIcon className="h-4 w-4 ml-2" />
                     </Link>
@@ -54,7 +54,7 @@ export function BookingButton() {
                         prefetch={false}
                     >
                         <div className="flex items-center gap-2">
-                            <div>Tea Harbour</div>
+                            <div>Tea Harbour, AET Junction</div>
                         </div>
                         <ArrowRightIcon className="h-4 w-4 ml-2" />
                     </Link>
