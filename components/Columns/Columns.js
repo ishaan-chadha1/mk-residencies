@@ -5,26 +5,6 @@ import { v4 as uuid } from "uuid";
 
 // Assuming each of these entries represents a property with its testimonials
 const testimonialsData = {
-    "Tea County": [
-        {
-            id: uuid(),
-            name: "Bhaskar Rabha",
-            review: "I had a pleasant stay at a hotel in Dibrugarh city, recommended by Mr. Dekhial. Our company booked an executive suite with top-notch amenities at reasonable tariffs. The complimentary breakfast was diverse, and the staff provided wonderful hospitality. Highly recommended for its quality ambiance and affordability.",
-            rating: 5
-        },
-        {
-            id: uuid(),
-            name: "Priyakshi Bordoloi",
-            review: "I stayed for two days and loved it. The breakfast menu, especially the sauteed vegetables, was really good. The staff is professional.",
-            rating: 5
-        },
-        {
-            id: uuid(),
-            name: "Rumi 24fit",
-            review: "This place is always my favorite! The atmosphere is mind-blowing, and the staff is outstanding. They prioritize customer happiness, and the food is pretty good. Totally worth the price. We really enjoyed a lot. Thank you!",
-            rating: 5
-        }
-    ],
     "Tea Harbour": [
         {
             id: uuid(),
