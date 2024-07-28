@@ -4,7 +4,6 @@ export function TermsAndConditions() {
             <div className="container px-4 md:px-6 flex flex-col items-center">
                 <div className="space-y-2 text-center pt-20">
                     <h2
-                        id="terms"
                         className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl/none"
                     >
                         Terms & Conditions

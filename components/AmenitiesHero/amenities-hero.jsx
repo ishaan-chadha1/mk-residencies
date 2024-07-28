@@ -58,8 +58,8 @@ export function AmenitiesHero() {
     }, []);
 
     return (
-        <div className="bg-transparent p-6">
-            <h2 className="text-2xl font-semibold mb-4">Amenities</h2>
+        <div className="bg-transparent">
+            <h2 className="text-2xl font-semibold mb-4 mt-0">Amenities</h2>
             <div className="amenities-grid grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
                 <Badge variant="outline">
                     <UtensilsIcon className="mr-2" />

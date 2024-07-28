@@ -89,9 +89,11 @@ export default function Home() {
                 <div id="aboutus" className="pt-10">
                     <HomeBanner />
                 </div>
+
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
                     {/* Features */}
+                    <div id="properties"></div>
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -101,7 +103,7 @@ export default function Home() {
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
                                 <SectionContainer className="feature-tabs">
-                                    <div id="properties">
+                                    <div>
                                         <PageTitle
                                             className="text-center mx-auto"
                                             type="default"
@@ -143,7 +145,12 @@ export default function Home() {
                                 className="text-center "
                                 alignment="center"
                             >
-                                <p style={{ paddingTop: "100px" }}>
+                                <p
+                                    style={{
+                                        paddingTop: "100px",
+                                        paddingBottom: "0px"
+                                    }}
+                                >
                                     Discover comfort, convenience, and
                                     affordability at TeaCorp Hotels. Welcome
                                     home.
@@ -153,12 +160,12 @@ export default function Home() {
                     </MotionBTTContainer>
                     {/* Testimonials */}
                     {/* <WhatToExpect /> */}
-                    <div id="amenities">
-                        <AmenitiesHero />
-                    </div>
+                    <div id="amenities"></div>
+                    <AmenitiesHero />
                     <FeaturedCollection />
                     {/* <AdithTemp /> */}
                     {/* <GalleryHero /> */}
+                    <div id="testimonials"></div>
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -166,7 +173,8 @@ export default function Home() {
                             id="testimonials"
                             className="benefits"
                         >
-                            <div id="testimonials">
+                            {" "}
+                            <div>
                                 <BadgeGroup alignment="left">
                                     <BadgeMessage>Testimonials</BadgeMessage>
                                     <BadgeIcon icon="twemoji:waving-hand" />
@@ -176,7 +184,6 @@ export default function Home() {
                                 This is what our customers have to say about our
                                 properties
                             </PageTitle>
-
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
@@ -197,7 +204,7 @@ export default function Home() {
                                 you need:
                             </PageTitle>
                             <Accordion />
-                            <div id="longstay" />
+                            <div id="longstay"></div>
                             <EnquiryForm />
                             <script
                                 src="https://static.elfsight.com/platform/platform.js"
@@ -208,6 +215,7 @@ export default function Home() {
                                 class="elfsight-app-7f278293-2342-4100-8d8b-f34f67e0ee88"
                                 data-elfsight-app-lazy
                             ></div>
+                            <div id="terms"></div>
                             <TermsAndConditions />
                         </SectionContainer>
                     </MotionBTTContainer>
