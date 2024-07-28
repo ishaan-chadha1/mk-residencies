@@ -62,66 +62,55 @@ const testimonialsData = {
 };
 
 export const Columns = () => {
-    // Initialize currentSlide to show the first testimonial of each property
-    const initialSlide = Object.keys(testimonialsData).reduce(
-        (acc, property) => {
-            acc[property] = 0;
-            return acc;
-        },
-        {}
-    );
-
+    // Initialize currentSlide to show the first set of testimonials
+    const initialSlide = 0;
     const [currentSlide, setCurrentSlide] = useState(initialSlide);
     const [fadeIn, setFadeIn] = useState(true);
+
+    const getVisibleTestimonials = () => {
+        const testimonialsArray = Object.values(testimonialsData).flat();
+        const startIndex = currentSlide * 4;
+        return testimonialsArray.slice(startIndex, startIndex + 4);
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
             setFadeIn(false); // Start with fade out to transition
             setTimeout(() => {
-                const newSlide = {};
-                Object.keys(testimonialsData).forEach((property) => {
-                    newSlide[property] =
-                        ((currentSlide[property] || 0) + 1) %
-                        testimonialsData[property].length;
-                });
-                setCurrentSlide(newSlide);
-                setFadeIn(true); // After updating, fade in the new testimonial
+                const testimonialsArray =
+                    Object.values(testimonialsData).flat();
+                const totalSlides = Math.ceil(testimonialsArray.length / 4);
+                setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+                setFadeIn(true); // After updating, fade in the new testimonials
             }, 500); // Adjust this timing based on your desired effect
         }, 10000); // Update every 10 seconds
 
         return () => clearInterval(interval);
-    }, [currentSlide]);
+    }, []);
 
     return (
         <SectionContainer className="testimonials grid gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
-            {Object.keys(testimonialsData).map((property) =>
-                testimonialsData[property].map(
-                    (testimonial, index) =>
-                        currentSlide[property] === index && (
-                            <div
-                                key={testimonial.id}
-                                className="testimonial-item text-[#737373] text-left transition-opacity duration-500"
-                                style={{ opacity: fadeIn ? 1 : 0 }}
-                            >
-                                <h3 className="text-xl mb-2 font-medium text-black">
-                                    {testimonial.name}
-                                </h3>
-                                <p>{testimonial.review}</p>
-                                <div className="flex">
-                                    {[...Array(testimonial.rating)].map(
-                                        (_, starIndex) => (
-                                            <Icon
-                                                key={starIndex}
-                                                icon="solar:star-bold"
-                                                className="h-5 mr-1 text-secondary-500"
-                                            />
-                                        )
-                                    )}
-                                </div>
-                            </div>
-                        )
-                )
-            )}
+            {getVisibleTestimonials().map((testimonial) => (
+                <div
+                    key={testimonial.id}
+                    className="testimonial-item text-[#737373] text-left transition-opacity duration-500"
+                    style={{ opacity: fadeIn ? 1 : 0 }}
+                >
+                    <h3 className="text-xl mb-2 font-medium text-black">
+                        {testimonial.name}
+                    </h3>
+                    <p>{testimonial.review}</p>
+                    <div className="flex">
+                        {[...Array(testimonial.rating)].map((_, starIndex) => (
+                            <Icon
+                                key={starIndex}
+                                icon="solar:star-bold"
+                                className="h-5 mr-1 text-secondary-500"
+                            />
+                        ))}
+                    </div>
+                </div>
+            ))}
         </SectionContainer>
     );
 };
