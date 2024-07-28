@@ -1,3 +1,4 @@
+import React from "react";
 import {
     DropdownMenu,
     DropdownMenuTrigger,
@@ -6,10 +7,9 @@ import {
 } from "@components/components/ui/dropdown-menu";
 import { Button } from "@components/components/ui/button";
 import Link from "next/link";
-
 export function BookingButton() {
     return (
-        <DropdownMenu>
+        <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
                 <Button
                     size="lg"
@@ -22,6 +22,8 @@ export function BookingButton() {
             <DropdownMenuContent
                 align="end"
                 className="w-[250px] animate-fade-in-up bg-[#FFA500]"
+                sideOffset={8}
+                style={{ overflow: "visible" }} // Ensure dropdown content itself is scrollable if needed
             >
                 <DropdownMenuItem>
                     <Link
