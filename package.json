@@ -1,7 +1,7 @@
 {
-    "name": "nutritrack",
+    "name": "teacorphotels",
     "version": "1.1.0",
-    "description": "NutriTrack - A customizable landing page theme built with AstroJS and TailwindCSS, specifically designed for Notion creators.",
+    "description": "TeaCorpHotels- Home away from Home Corporate accommodation",
     "main": "index.js",
     "private": true,
     "repository": {
@@ -9,14 +9,12 @@
         "url": "git+https://github.com"
     },
     "keywords": [
-        "next",
-        "nextjs",
-        "react",
-        "reactjs",
-        "npx",
-        "tailwindcss",
-        "tailwind"
-    ],
+        "hotels",
+        "corporate",
+        "accommodation",
+        "hotel",
+        "TeaCorpHotels"
+       ],
     "author": "ishaan",
     "homepage": "",
     "scripts": {

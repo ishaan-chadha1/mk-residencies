@@ -17,12 +17,14 @@ const nextConfig = {
         domains: ["s.gravatar.com"]
     },
     env: {
-        siteTitle: "Your Company",
-        siteDescription: "Your company description.",
-        siteKeywords: "your company keywords",
-        siteUrl: "You site url",
+        siteTitle: "Tea Corp Hotels - Corporate Accommodation in Bangalore",
+        siteDescription:
+            "Tea Corp Hotels - Home Away from Home Corporate Accommodation ",
+        siteKeywords:
+            "corporate accommodation, Bangalore, hotels, Tea Corp Hotels",
+        siteUrl: "https://www.teacorphotels.com",
         siteImagePreviewUrl: "/images/preview.jpeg",
-        twitterHandle: "@your_handle"
+        twitterHandle: "@teacorphotels"
     },
     headers() {
         return [
