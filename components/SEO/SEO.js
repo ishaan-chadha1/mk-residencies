@@ -21,6 +21,10 @@ const SEO = ({ title, description, keywords }) => {
             />
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={metaKeywords} />
+            <meta
+                name="google-site-verification"
+                content="ZRMlcZNRaOMArX_npl0kUoOT1KklSlTh33GJ3Ok_PUE"
+            />
             {/* { Twitter } */}
             <meta
                 name="twitte:card"
