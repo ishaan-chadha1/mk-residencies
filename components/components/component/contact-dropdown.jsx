@@ -62,7 +62,7 @@ export function ContactDropdown() {
                     </div>
                 )}
                 <div className="font-medium text-gray-500">
-                    <p>Management: mehulgoenka7@gmail.com</p>
+                    <p>Management: mehulgoenka@teacorphotels.com</p>
                 </div>
             </div>
             <style jsx>{`

@@ -36,8 +36,8 @@ const DATA = [
         title: "Contact Us",
         items: [
             {
-                label: "Management: mehulgoenka7@gmail.com",
-                href: "mailto:mehulgoenka7@gmail.com"
+                label: "Management: mehulgoenka@teacorphotels.com",
+                href: "mailto:mehulgoenka@teacorphotels.com"
             },
             {
                 label: "Tea County: +91 7086061222 / 7578010089, hotelteacounty@gmail.com",
