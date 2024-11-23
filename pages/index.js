@@ -147,7 +147,7 @@ export default function Home() {
                                     }}
                                 >
                                     Discover comfort, convenience, and
-                                    affordability at TeaCorp Hotels. Welcome
+                                    affordability at MK Residencies. Welcome
                                     home.
                                 </p>
                             </Content>

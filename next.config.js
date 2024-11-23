@@ -17,14 +17,15 @@ const nextConfig = {
         domains: ["s.gravatar.com"]
     },
     env: {
-        siteTitle: "Tea Corp Hotels - Corporate Accommodation in Bangalore",
+        siteTitle:
+            "MK Residencies - Corporate Accommodation and Suites in Bangalore",
         siteDescription:
-            "Tea Corp Hotels - Home Away from Home Corporate Accommodation ",
+            "MK Residencies - Corporate Accommodation and Suites in Bangalore ",
         siteKeywords:
-            "corporate accommodation, Bangalore, hotels, Tea Corp Hotels",
-        siteUrl: "https://www.teacorphotels.com",
+            "corporate accommodation, Bangalore, hotels, MK Residencies",
+        siteUrl: "https://www.mkresidencies.com",
         siteImagePreviewUrl: "/images/preview.jpeg",
-        twitterHandle: "@teacorphotels"
+        twitterHandle: "@mkresidencies"
     },
     headers() {
         return [
