@@ -7,7 +7,7 @@ import clsx from "clsx";
 const accordionData = [
     {
         id: uuid(),
-        title: "What are the check-in and check-out times at TeaCorp Hotels?",
+        title: "What are the check-in and check-out times at MK Residencies?",
         isOpen: true,
         content:
             "Check-in time is at 12 noon, and check-out time is at 12 noon. We understand that travel plans may vary, so feel free to contact us for special arrangements."
@@ -28,7 +28,7 @@ const accordionData = [
     },
     {
         id: uuid(),
-        title: "Are pets allowed at TeaCorp Hotels?",
+        title: "Are pets allowed at MK Residencies?",
         isOpen: false,
         content:
             "Unfortunately, we do not allow pets on our premises, except for service animals as required by law."
@@ -49,7 +49,7 @@ const accordionData = [
     },
     {
         id: uuid(),
-        title: "What dining options are available at TeaCorp Hotels?",
+        title: "What dining options are available at MK Residencies?",
         isOpen: false,
         content:
             "Our in-house kitchen serves a variety of delicious dishes for breakfast, lunch, and dinner. Additionally, we offer room service for guests who prefer to dine in the comfort of their rooms."
@@ -77,7 +77,7 @@ const accordionData = [
     },
     {
         id: uuid(),
-        title: "What safety measures are in place at TeaCorp Hotels?",
+        title: "What safety measures are in place at MK Residencies?",
         isOpen: false,
         content:
             "We prioritize the safety and well-being of our guests and staff. Our properties are equipped with CCTV security systems, and we follow stringent cleanliness and hygiene protocols in line with industry standards."
@@ -91,7 +91,7 @@ const accordionData = [
     },
     {
         id: uuid(),
-        title: "How can I provide feedback about my stay at TeaCorp Hotels?",
+        title: "How can I provide feedback about my stay at MK Residencies?",
         isOpen: false,
         content:
             "We value your feedback and strive to continuously improve our services. You can share your feedback with our team during your stay, or contact us via email or phone after your departure."
