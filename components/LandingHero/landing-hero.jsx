@@ -23,9 +23,9 @@ export function LandingHero() {
             >
                 {/* Text overlay */}
                 <div className={styles.landingHeroText}>
-                    <h1 className={styles.landingHeroTitle}>TeaCorpHotels</h1>
+                    <h1 className={styles.landingHeroTitle}>MK Residencies</h1>
                     <p className={styles.landingHeroSubtitle}>
-                        Chain of Corporate hotels
+                        Corporate Hotels and Suites
                     </p>
                 </div>
             </section>
