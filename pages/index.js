@@ -41,39 +41,39 @@ const propertyData = [
         roomTypes: "Deluxe rooms only",
         specialFeatures: "Dedicated work stations",
         contactInfo: "teaharbour23@gmail.com, +91 9741848372"
-    },
-    {
-        images: [
-            "/ts corporate room.jpg",
-            "/ts deluxe room .jpg",
-            "/ts reception.jpg",
-            "/ts twin deluxe.jpg"
-        ],
-        title: "Tea Square",
-        description:
-            "Where tech and tranquility converge! Experience the perfect blend of urban convenience and peaceful surroundings near Bangalore's tech parks on the Outer Ring Road.",
-        location: "Green Glen Layout, Bellandur, Bangalore",
-        roomTypes: "Deluxe rooms, Standard room, Sharing PG rooms",
-        specialFeatures: "All price range rooms available",
-        contactInfo: "teasquare14@gmail.com, +91 9606699214"
-    },
-    {
-        images: [
-            "/tp deluxe room .jpg",
-            "/tp bedroom in suite room .jpg",
-            "/tp suite room.jpg",
-            "/tp recpetion 2.jpg"
-        ],
-        title: "Tea Pavilion",
-        description:
-            "An urban oasis amidst Bangalore's lively dining and nightlife scene.",
-        location: "Koramangala, Bangalore",
-        roomTypes:
-            "Deluxe room, Suite room, Family room (2 deluxe rooms in one)",
-        specialFeatures:
-            "Located in the Guinness World Book of Records locality for most number of restaurants and pubs in a km radius.",
-        contactInfo: "teapavilion@gmail.com, +91 9632658687"
     }
+    // {
+    //     images: [
+    //         "/ts corporate room.jpg",
+    //         "/ts deluxe room .jpg",
+    //         "/ts reception.jpg",
+    //         "/ts twin deluxe.jpg"
+    //     ],
+    //     title: "Tea Square",
+    //     description:
+    //         "Where tech and tranquility converge! Experience the perfect blend of urban convenience and peaceful surroundings near Bangalore's tech parks on the Outer Ring Road.",
+    //     location: "Green Glen Layout, Bellandur, Bangalore",
+    //     roomTypes: "Deluxe rooms, Standard room, Sharing PG rooms",
+    //     specialFeatures: "All price range rooms available",
+    //     contactInfo: "teasquare14@gmail.com, +91 9606699214"
+    // }
+    // {
+    //     images: [
+    //         "/tp deluxe room .jpg",
+    //         "/tp bedroom in suite room .jpg",
+    //         "/tp suite room.jpg",
+    //         "/tp recpetion 2.jpg"
+    //     ],
+    //     title: "Tea Pavilion",
+    //     description:
+    //         "An urban oasis amidst Bangalore's lively dining and nightlife scene.",
+    //     location: "Koramangala, Bangalore",
+    //     roomTypes:
+    //         "Deluxe room, Suite room, Family room (2 deluxe rooms in one)",
+    //     specialFeatures:
+    //         "Located in the Guinness World Book of Records locality for most number of restaurants and pubs in a km radius.",
+    //     contactInfo: "teapavilion@gmail.com, +91 9632658687"
+    // }
 ];
 
 export default function Home() {
@@ -104,20 +104,10 @@ export default function Home() {
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
                                 <SectionContainer className="feature-tabs">
-                                    <div>
-                                        <PageTitle
-                                            className="text-center mx-auto"
-                                            type="default"
-                                        >
-                                            Check out All our Properties!
-                                        </PageTitle>
-                                        <p style={{ textAlign: "center" }}>
-                                            Scroll over the Property for More
-                                            information
-                                        </p>
-                                    </div>
                                     <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
-                                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6">
+                                        {/* Wrapper Div for Centering */}
+                                        <div className="flex justify-center">
+                                            {/* Render Single Property Card */}
                                             {propertyData.map(
                                                 (property, index) => (
                                                     <PropCarousel

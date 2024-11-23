@@ -16,61 +16,72 @@ export function PropCarousel({ property }) {
     }, [property.images.length]);
 
     return (
-        <div
-            className={`max-w-full bg-white rounded-lg shadow-lg overflow-hidden transition-transform ${
-                isHovered ? "scale-105" : ""
-            }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
-            <div className="relative">
-                {/* Carousel Image Container */}
-                {property.images.map((src, index) => (
-                    <Image
-                        key={src}
-                        width={400}
-                        height={400}
-                        src={src}
-                        alt={`Slide ${index + 1}`}
-                        className={`object-cover w-full h-64 transition-opacity duration-500 ease-in-out ${
-                            index === currentSlide ? "opacity-100" : "opacity-0"
-                        }`}
-                        style={{
-                            position:
-                                index === currentSlide ? "static" : "absolute"
-                        }}
-                    />
-                ))}
+        <div className="flex flex-col items-center justify-start min-h-screen bg-gray-100">
+            {/* Heading Section */}
+            <div className="text-center mb-12">
+                <h1 className="text-4xl font-extrabold text-gray-800 mb-4">
+                    Check out All our Properties!
+                </h1>
+                <p className="text-lg text-gray-600">
+                    Scroll over the Property for More Information
+                </p>
             </div>
-            <div className="p-6">
-                <h3 className="font-semibold text-lg leading-tight truncate">
-                    {property.title}
-                </h3>
-                <p className="text-sm text-gray-500">{property.location}</p>
-                <div
-                    className={`transition-opacity duration-300 ${
-                        isHovered ? "opacity-100" : "opacity-0"
-                    }`}
-                >
-                    <p className="mt-2 text-gray-600 text-sm">
-                        {property.description}
+
+            {/* Single Card Display */}
+            <div
+                className={`w-full max-w-md bg-white rounded-lg shadow-xl overflow-hidden transition-transform ${
+                    isHovered ? "scale-105" : ""
+                }`}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                {/* Carousel Image */}
+                <div className="relative">
+                    {property.images.map((src, index) => (
+                        <Image
+                            key={src}
+                            width={600}
+                            height={400}
+                            src={src}
+                            alt={`Slide ${index + 1}`}
+                            className={`object-cover w-full h-64 transition-opacity duration-500 ease-in-out ${
+                                index === currentSlide
+                                    ? "opacity-100"
+                                    : "opacity-0"
+                            }`}
+                            style={{
+                                position:
+                                    index === currentSlide
+                                        ? "static"
+                                        : "absolute"
+                            }}
+                        />
+                    ))}
+                </div>
+
+                {/* Card Content */}
+                <div className="p-6 text-center">
+                    <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                        {property.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 mb-4">
+                        {property.location}
                     </p>
-                    <p className="mt-2 text-sm text-gray-600">
-                        Room Types: {property.roomTypes}
+                    <p className="text-gray-600 mb-4">{property.description}</p>
+                    <p className="text-gray-600 mb-2">
+                        <strong>Room Types:</strong> {property.roomTypes}
                     </p>
-                    {property.specialFeatures && ( // This line checks if specialFeatures is not empty before rendering
-                        <p className="mt-2 text-sm text-gray-600">
-                            Special Features: {property.specialFeatures}
+                    {property.specialFeatures && (
+                        <p className="text-gray-600 mb-4">
+                            <strong>Special Features:</strong>{" "}
+                            {property.specialFeatures}
                         </p>
                     )}
-                    <div className="px-6 pb-6">
-                        <p className="text-sm text-gray-600">
-                            Contact: {property.contactInfo}
-                        </p>
-                    </div>
+                    <p className="text-sm text-gray-500">
+                        <strong>Contact:</strong> {property.contactInfo}
+                    </p>
                 </div>
             </div>
         </div>
     );
 }
-// Remember to update the image paths to match the actual paths in your project.

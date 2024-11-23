@@ -38,7 +38,7 @@ export const HomeBanner = () => {
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
                             <Button href="#amenities">Amenities</Button>
-                            <BookingButton />
+                            {/* <BookingButton /> */}
                         </ButtonGroup>
                     </div>
                 </MotionBTTContainer>
