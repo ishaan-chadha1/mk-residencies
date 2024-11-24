@@ -84,10 +84,21 @@ export default function Home() {
                 description="Tea Corp Hotels, Home Away From Home , Corporate Accomodation"
                 keywords="corporate accommodation, hotels, Bangalore, Tea Corp"
             />
-            <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
+            <div
+                className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 "
+                style={{
+                    background: "beige"
+                }}
+            >
                 {/* { Page Banner } */}
                 <LandingHero />
-                <div id="aboutus" className="pt-10">
+                <div
+                    id="aboutus"
+                    className="pt-10"
+                    style={{
+                        background: "beige"
+                    }}
+                >
                     <HomeBanner />
                 </div>
 
@@ -104,13 +115,13 @@ export default function Home() {
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
                                 <SectionContainer className="feature-tabs">
-                                    <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
+                                    <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8" >
                                         {/* Wrapper Div for Centering */}
-                                        <div className="flex justify-center">
+                                        <div className="flex justify-center" >
                                             {/* Render Single Property Card */}
                                             {propertyData.map(
                                                 (property, index) => (
-                                                    <PropCarousel
+                                                    <PropCarousel 
                                                         key={`prop-carousel-${index}`}
                                                         property={property}
                                                     />

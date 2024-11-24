@@ -16,7 +16,12 @@ export function PropCarousel({ property }) {
     }, [property.images.length]);
 
     return (
-        <div className="flex flex-col items-center justify-start min-h-screen bg-gray-100">
+        <div
+            className="flex flex-col items-center justify-start min-h-screen bg-gray-100"
+            style={{
+                background: "beige"
+            }}
+        >
             {/* Heading Section */}
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-extrabold text-gray-800 mb-4">
