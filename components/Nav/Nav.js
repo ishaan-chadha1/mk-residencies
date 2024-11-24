@@ -21,7 +21,7 @@ export const Nav = () => {
         setIsNavOpen(false);
     };
     return (
-        <nav className="header-nav">
+        <nav className="header-nav" style={{ fontFamily: "Rajdhani" }}>
             <div className="header-nav--container">
                 <button
                     onClick={() => setIsNavOpen(!isNavOpen)}

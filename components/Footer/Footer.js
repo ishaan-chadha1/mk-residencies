@@ -67,7 +67,8 @@ export const Footer = () => {
         <footer
             id="footer"
             style={{
-                background: "beige"
+                background: "beige",
+                fontFamily: "Rajdhani"
             }}
         >
             <SectionContainer className="footer--container wrap wrap-px relative z-10">

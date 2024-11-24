@@ -25,6 +25,7 @@ import { GalleryHero } from "@components/GalleryHero/gallery-hero";
 import { FeaturedCollection } from "@components/FeaturedCollection/featured-collection";
 import { WhatToExpect } from "@components/WhatToExpect/what-to-expect";
 import { AdithTemp } from "@components/components/component/adith-temp";
+import { Rajdhani } from "@next/font/google";
 
 const propertyData = [
     {
@@ -87,7 +88,8 @@ export default function Home() {
             <div
                 className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 "
                 style={{
-                    background: "beige"
+                    background: "beige",
+                    fontFamily: "Rajdhani"
                 }}
             >
                 {/* { Page Banner } */}
@@ -96,7 +98,8 @@ export default function Home() {
                     id="aboutus"
                     className="pt-10"
                     style={{
-                        background: "beige"
+                        background: "beige",
+                        fontFamily: "Rajdhani"
                     }}
                 >
                     <HomeBanner />
@@ -115,13 +118,13 @@ export default function Home() {
                                 transition={{ delay: 0.2, duration: 0.5 }}
                             >
                                 <SectionContainer className="feature-tabs">
-                                    <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8" >
+                                    <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
                                         {/* Wrapper Div for Centering */}
-                                        <div className="flex justify-center" >
+                                        <div className="flex justify-center">
                                             {/* Render Single Property Card */}
                                             {propertyData.map(
                                                 (property, index) => (
-                                                    <PropCarousel 
+                                                    <PropCarousel
                                                         key={`prop-carousel-${index}`}
                                                         property={property}
                                                     />

@@ -60,7 +60,10 @@ export function LandingHero() {
                 ))}
 
                 {/* Text overlay */}
-                <div className={styles.landingHeroText}>
+                <div
+                    className={styles.landingHeroText}
+                    style={{ color: "black" }}
+                >
                     <h1 className={styles.landingHeroTitle}>MK Residencies</h1>
                     <p className={styles.landingHeroSubtitle}>
                         Corporate Hotels and Suites
