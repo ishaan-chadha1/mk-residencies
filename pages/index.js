@@ -81,9 +81,9 @@ export default function Home() {
     return (
         <Layout className="">
             <SEO
-                title="Welcome to Tea Corp Hotels"
-                description="Tea Corp Hotels, Home Away From Home , Corporate Accomodation"
-                keywords="corporate accommodation, hotels, Bangalore, Tea Corp"
+                title="Welcome to MK Residencies"
+                description="MK Residencies and Hotels, Home Away From Home , Corporate Accomodation and Suites"
+                keywords="corporate accommodation, hotels, Bangalore, MK Residencies"
             />
             <div
                 className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 "
