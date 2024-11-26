@@ -19,7 +19,7 @@ export function PropCarousel({ property }) {
         <div
             className="flex flex-col items-center justify-start min-h-screen bg-gray-100"
             style={{
-                background: "beige"
+                background: "#D5B895"
             }}
         >
             {/* Heading Section */}

@@ -67,7 +67,7 @@ export const Footer = () => {
         <footer
             id="footer"
             style={{
-                background: "beige",
+                background: "#D5B895",
                 fontFamily: "Rajdhani"
             }}
         >

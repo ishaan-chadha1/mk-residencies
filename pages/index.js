@@ -88,7 +88,7 @@ export default function Home() {
             <div
                 className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 "
                 style={{
-                    background: "beige",
+                    background: "#D5B895",
                     fontFamily: "Rajdhani"
                 }}
             >
@@ -98,7 +98,7 @@ export default function Home() {
                     id="aboutus"
                     className="pt-10"
                     style={{
-                        background: "beige",
+                        background: "#D5B895",
                         fontFamily: "Rajdhani"
                     }}
                 >
