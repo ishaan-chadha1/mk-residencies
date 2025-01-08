@@ -30,10 +30,9 @@ import { Rajdhani } from "@next/font/google";
 const propertyData = [
     {
         images: [
-            "/TH dinning area.jpg",
-            "/th room 3.jpg",
-            "/th room 4 .jpg",
-            "/DSC09323-HDR.jpg"
+            "/background_image2.jpg",
+            "/background_image3.jpg",
+            "/background_image4.jpg"
         ],
         title: "Tea Harbour",
         description:
