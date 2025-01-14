@@ -31,7 +31,7 @@ export function ContactDropdown() {
     return (
         <div
             key="1"
-            className="contact-dropdown flex flex-col space-y-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800"
+            className="contact-dropdown flex flex-col space-y-4 p-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-blue-200"
         >
             <h2 className="text-2xl font-bold mb-1">Contact Us</h2>
             <div className="flex flex-col">

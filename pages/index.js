@@ -87,7 +87,7 @@ export default function Home() {
             <div
                 className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 "
                 style={{
-                    background: "#D5B895",
+                    background: "#c99c65",
                     fontFamily: "Rajdhani"
                 }}
             >
@@ -97,12 +97,35 @@ export default function Home() {
                     id="aboutus"
                     className="pt-10"
                     style={{
-                        background: "#D5B895",
+                        background: "#c99c65",
                         fontFamily: "Rajdhani"
                     }}
                 >
                     <HomeBanner />
                 </div>
+                <PageTitle className="text-center mx-auto pt-10" type="default">
+                    Our Promise
+                </PageTitle>
+                <Content className="text-center" alignment="center">
+                    <p>
+                        We prioritize spacious, comfortable, affordable, and
+                        warm hospitality. Our mission is to provide maximum
+                        value for every guest&rsquo;s money, while prioritizing
+                        their experience above all.
+                    </p>
+                </Content>
+                <ContentImage />
+                <Content className="text-center " alignment="center">
+                    <p
+                        style={{
+                            paddingTop: "100px",
+                            paddingBottom: "0px"
+                        }}
+                    >
+                        Discover comfort, convenience, and affordability at MK
+                        Residencies. Welcome home.
+                    </p>
+                </Content>
 
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
@@ -133,37 +156,6 @@ export default function Home() {
                                     </div>
                                 </SectionContainer>
                             </MotionBTTContainer>
-                            <PageTitle
-                                className="text-center mx-auto pt-10"
-                                type="default"
-                            >
-                                Our Promise
-                            </PageTitle>
-                            <Content className="text-center" alignment="center">
-                                <p>
-                                    We prioritize spacious, comfortable,
-                                    affordable, and warm hospitality. Our
-                                    mission is to provide maximum value for
-                                    every guest&rsquo;s money, while
-                                    prioritizing their experience above all.
-                                </p>
-                            </Content>
-                            <ContentImage />
-                            <Content
-                                className="text-center "
-                                alignment="center"
-                            >
-                                <p
-                                    style={{
-                                        paddingTop: "100px",
-                                        paddingBottom: "0px"
-                                    }}
-                                >
-                                    Discover comfort, convenience, and
-                                    affordability at MK Residencies. Welcome
-                                    home.
-                                </p>
-                            </Content>
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Testimonials */}
