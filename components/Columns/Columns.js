@@ -93,7 +93,7 @@ export const Columns = () => {
             {getVisibleTestimonials().map((testimonial) => (
                 <div
                     key={testimonial.id}
-                    className="testimonial-item text-[#737373] text-left transition-opacity duration-500"
+                    className="testimonial-item text-[#100d0d] text-left transition-opacity duration-500"
                     style={{ opacity: fadeIn ? 1 : 0 }}
                 >
                     <h3 className="text-xl mb-2 font-medium text-black">
