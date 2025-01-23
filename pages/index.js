@@ -30,9 +30,9 @@ import { Rajdhani } from "@next/font/google";
 const propertyData = [
     {
         images: [
-            "/placeholder-deluxe1.jpg",
-            "/placeholder-deluxe2.jpg",
-            "/placeholder-deluxe3.jpg"
+            "/11.jpg?height=485&width=940",
+            "/22.jpg?height=485&width=940",
+            "/33.jpg?height=485&width=940"
         ],
         title: "Deluxe Room",
         description:
@@ -45,9 +45,9 @@ const propertyData = [
     },
     {
         images: [
-            "/placeholder-premium1.jpg",
-            "/placeholder-premium2.jpg",
-            "/placeholder-premium3.jpg"
+            "/44.jpg?height=485&width=940",
+            "/55.jpg?height=485&width=940",
+            "/1.jpg?height=485&width=940"
         ],
         title: "Premium Room",
         description:
