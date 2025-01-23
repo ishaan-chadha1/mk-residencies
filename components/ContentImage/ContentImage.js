@@ -10,7 +10,7 @@ const ContentImageData = [
         content:
             "We're committed to growing together with partners who share our values, enhancing facilities, and creating memorable experiences for every guest.",
         align: "right",
-        image: "/IMG-20250115-WA0003.jpg"
+        image: "/2.jpg"
     },
     {
         id: uuid(),
@@ -18,7 +18,7 @@ const ContentImageData = [
         content:
             "Whether you're here for business or leisure, stay with us on our journey to redefine hospitality and create unforgettable memories.",
         align: "left",
-        image: "/IMG-20250115-WA0003.jpg"
+        image: "/33.jpg?height=485&width=940"
     }
 ];
 
@@ -42,7 +42,7 @@ export const ContentImage = () => {
                             height={512}
                             objectFit="cover"
                             alt="Process Banner 1"
-                            className="drop-shadow-xl w-full offset-y-0 offset-x-8 blur-16 transform transition-transform hover:scale-105"
+                            className="drop-shadow-xl w-full h-full aspect-square transform transition-transform hover:scale-105"
                         />
                     </div>
                     <div
