@@ -126,7 +126,9 @@ export default function Home() {
                                 <SectionContainer className="feature-tabs">
                                     <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
                                         {/* Wrapper Div for Centering */}
+
                                         <div className="flex flex-col items-center justify-center">
+                                            <h2>Check out our Rooms!</h2>
                                             {propertyData.map(
                                                 (property, index) => (
                                                     <PropCarousel
