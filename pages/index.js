@@ -30,50 +30,34 @@ import { Rajdhani } from "@next/font/google";
 const propertyData = [
     {
         images: [
-            "/IMG-20250115-WA0005.jpg",
-            "/IMG-20250115-WA0003.jpg",
-            "/IMG-20250115-WA0004.jpg"
+            "/placeholder-deluxe1.jpg",
+            "/placeholder-deluxe2.jpg",
+            "/placeholder-deluxe3.jpg"
         ],
-        title: "Tea Harbour",
+        title: "Deluxe Room",
         description:
-            "Your gateway to serenity amidst Bangalore's tech hub, offering a seamless blend of modern convenience and serene surroundings along the Outer Ring Road.",
-        location: "AET CIRCLE, Doddakannelli, Bangalore",
-        roomTypes: "Deluxe rooms only",
-        specialFeatures: "Dedicated work stations",
-        contactInfo: "teaharbour23@gmail.com, +91 9741848372"
+            "Experience luxury and comfort in our well-appointed Deluxe Rooms.",
+        location: "Downtown, City Center",
+        roomTypes: "Deluxe Room",
+        specialFeatures:
+            "Spacious interiors, King-size beds, Complimentary Wi-Fi",
+        contactInfo: "deluxe@luxuryhotel.com, +91 9999999999"
+    },
+    {
+        images: [
+            "/placeholder-premium1.jpg",
+            "/placeholder-premium2.jpg",
+            "/placeholder-premium3.jpg"
+        ],
+        title: "Premium Room",
+        description:
+            "Our Premium Rooms offer breathtaking views and top-notch amenities.",
+        location: "Beachfront, Coastal Avenue",
+        roomTypes: "Premium Room",
+        specialFeatures:
+            "Ocean views, Private balcony, Exclusive lounge access",
+        contactInfo: "premium@luxuryhotel.com, +91 8888888888"
     }
-    // {
-    //     images: [
-    //         "/ts corporate room.jpg",
-    //         "/ts deluxe room .jpg",
-    //         "/ts reception.jpg",
-    //         "/ts twin deluxe.jpg"
-    //     ],
-    //     title: "Tea Square",
-    //     description:
-    //         "Where tech and tranquility converge! Experience the perfect blend of urban convenience and peaceful surroundings near Bangalore's tech parks on the Outer Ring Road.",
-    //     location: "Green Glen Layout, Bellandur, Bangalore",
-    //     roomTypes: "Deluxe rooms, Standard room, Sharing PG rooms",
-    //     specialFeatures: "All price range rooms available",
-    //     contactInfo: "teasquare14@gmail.com, +91 9606699214"
-    // }
-    // {
-    //     images: [
-    //         "/tp deluxe room .jpg",
-    //         "/tp bedroom in suite room .jpg",
-    //         "/tp suite room.jpg",
-    //         "/tp recpetion 2.jpg"
-    //     ],
-    //     title: "Tea Pavilion",
-    //     description:
-    //         "An urban oasis amidst Bangalore's lively dining and nightlife scene.",
-    //     location: "Koramangala, Bangalore",
-    //     roomTypes:
-    //         "Deluxe room, Suite room, Family room (2 deluxe rooms in one)",
-    //     specialFeatures:
-    //         "Located in the Guinness World Book of Records locality for most number of restaurants and pubs in a km radius.",
-    //     contactInfo: "teapavilion@gmail.com, +91 9632658687"
-    // }
 ];
 
 export default function Home() {
@@ -142,12 +126,11 @@ export default function Home() {
                                 <SectionContainer className="feature-tabs">
                                     <div className="container mx-auto px-4 pt-10 sm:px-6 lg:px-8">
                                         {/* Wrapper Div for Centering */}
-                                        <div className="flex justify-center">
-                                            {/* Render Single Property Card */}
+                                        <div className="flex flex-col items-center justify-center">
                                             {propertyData.map(
                                                 (property, index) => (
                                                     <PropCarousel
-                                                        key={`prop-carousel-${index}`}
+                                                        key={`property-${index}`}
                                                         property={property}
                                                     />
                                                 )
