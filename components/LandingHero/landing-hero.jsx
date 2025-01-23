@@ -4,10 +4,10 @@ import styles from "./landing-hero.module.css"; // Import the CSS module
 export function LandingHero() {
     // Array of images for the carousel
     const backgroundImages = [
-        "/IMG-20250115-WA0003.jpg?height=485&width=940", // Replace with actual image URLs
-        "/IMG-20250115-WA0004.jpg?height=485&width=940",
-        "/IMG-20250115-WA0005.jpg?height=485&width=940",
-        "/IMG-20250115-WA0006.jpg?height=485&width=940"
+        "/3.jpg?height=485&width=940", // Replace with actual image URLs
+        "/2.jpg?height=485&width=940",
+        "/5.jpg?height=485&width=940",
+        "/1.jpg?height=485&width=940"
     ];
 
     // State to track the current background image index and fade state
