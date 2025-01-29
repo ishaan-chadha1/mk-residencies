@@ -65,10 +65,10 @@ export function AmenitiesHero() {
                     <UtensilsIcon className="mr-2" />
                     In-House Kitchen
                 </Badge>
-                <Badge variant="outline">
+                {/* <Badge variant="outline">
                     <BreakfastIcon className="mr-2" />
                     Breakfast
-                </Badge>
+                </Badge> */}
                 <Badge variant="outline">
                     <XIcon className="mr-2" />
                     AC
@@ -85,14 +85,14 @@ export function AmenitiesHero() {
                     <LoaderIcon className="mr-2" />
                     24/7 Power Backup
                 </Badge>
-                <Badge variant="outline">
+                {/* <Badge variant="outline">
                     <MicrowaveIcon className="mr-2" />
                     Microwave
-                </Badge>
-                <Badge variant="outline">
+                </Badge> */}
+                {/* <Badge variant="outline">
                     <CoffeeIcon className="mr-2" />
                     Coffee Maker & Kettle
-                </Badge>
+                </Badge> */}
                 <Badge variant="outline">
                     <StaffIcon className="mr-2" />
                     Dedicated Staff

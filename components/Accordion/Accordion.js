@@ -45,14 +45,7 @@ const accordionData = [
         title: "Do you have facilities for hosting events or meetings?",
         isOpen: false,
         content:
-            "Yes, we offer versatile event spaces. Contact our team for personalized assistance in planning your event."
-    },
-    {
-        id: uuid(),
-        title: "What dining options are available at MK Residencies?",
-        isOpen: false,
-        content:
-            "Our in-house kitchen serves a variety of delicious dishes for breakfast, lunch, and dinner. Additionally, we offer room service for guests who prefer to dine in the comfort of their rooms."
+            "No, we currently do not have facilities for hosting events or meetings. You can contact our team in order to get information and assistance regarding venues in and around the area."
     },
     {
         id: uuid(),
@@ -87,7 +80,7 @@ const accordionData = [
         title: "Are there any nearby attractions or points of interest?",
         isOpen: false,
         content:
-            "Our hotels are strategically located near tech parks, IT offices, and various attractions. Feel free to ask our concierge team for recommendations and assistance with planning your itinerary."
+            "It is located in the heart of HSR Layout providing all the necessary facilities you need from groceries and gyms to shopping all within a 10 minute radius"
     },
     {
         id: uuid(),
